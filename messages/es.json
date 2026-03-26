@@ -1,4 +1,14 @@
 {
+  "Hero": {
+    "greeting": "Hola! 👋",
+    "name-short": "Soy Chris",
+    "headline-1": "'Builder'",
+    "headline-2": "digital",
+    "description": "Creo landings excepcionales y eficientes que multiplican tu visibilidad y resultados.",
+    "badge": "Disponible · 2025",
+    "photo-alt": "Christian Rodes"
+  },
+
   "Metadata": {
     "title": "Soluciones completas: estrategia, diseño, desarrollo y crecimiento.",
     "description": "Ayudamos a las empresas a dar forma, crear y desarrollar productos digitales excepcionales. ProductPartner ofrece asesoramiento especializado desde la estrategia hasta el lanzamiento y más allá.",

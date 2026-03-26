@@ -1,7 +1,9 @@
+import HeroSection from '@/components/hero/HeroSection';
+
 export default function Home() {
 	return (
 		<main>
-			<h1>Portfolio de Christian - Ready</h1>
+			<HeroSection />
 		</main>
 	);
 }

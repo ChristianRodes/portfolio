@@ -1,4 +1,14 @@
 {
+  "Hero": {
+    "greeting": "Hey! 👋",
+    "name-short": "I'm Chris",
+    "headline-1": "'Builder'",
+    "headline-2": "digital",
+    "description": "I build exceptional sites that deliver results.",
+    "badge": "Available · 2025",
+    "photo-alt": "Christian Rodes"
+  },
+
   "Metadata": {
     "title": "End-to-end product solutions: strategy to design, development and growth",
     "description": "Helping businesses shape, build, and grow exceptional digital products. ProductPartner provides expert guidance from strategy to launch and beyond.",
