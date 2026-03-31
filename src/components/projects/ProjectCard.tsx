@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const spring = [0.22, 1, 0.36, 1] as const;
 
@@ -10,6 +11,7 @@ interface ProjectCardProps {
   description: string;
   metric: string;
   image: string;
+  href?: string;
   index: number;
   inView: boolean;
 }
@@ -19,10 +21,11 @@ export default function ProjectCard({
   description,
   metric,
   image,
+  href,
   index,
   inView,
 }: ProjectCardProps) {
-  return (
+  const card = (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -31,16 +34,16 @@ export default function ProjectCard({
       className="flex flex-col sm:flex-row gap-6 border-t border-[#E2DCC8] py-8 first:border-t-0 first:pt-0 cursor-pointer group"
     >
       {/* Thumbnail */}
-      <div className="relative w-full sm:w-44 h-28 shrink-0 rounded-xl overflow-hidden bg-[#F0EDD8] border border-[#E2DCC8] flex items-center justify-center p-4">
+      <div className="relative w-full sm:w-44 h-28 shrink-0 rounded-xl overflow-hidden bg-[#F0EDD8] border border-[#E2DCC8]">
         {image ? (
           <Image
             src={image}
             alt={title}
             fill
-            className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
-          <span className="text-xs text-[#1F4C34]/40 font-medium">{title}</span>
+          <span className="text-xs text-[#1F4C34]/40 font-medium flex items-center justify-center h-full">{title}</span>
         )}
       </div>
 
@@ -54,4 +57,10 @@ export default function ProjectCard({
       </div>
     </motion.div>
   );
+
+  if (href) {
+    return <Link href={href}>{card}</Link>;
+  }
+
+  return card;
 }

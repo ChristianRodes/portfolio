@@ -2,8 +2,8 @@
   "Hero": {
     "greeting": "Hey! 👋",
     "name-short": "I'm Chris",
-    "headline-1": "'Builder'",
-    "headline-2": "digital",
+    "headline-1": "Digital",
+    "headline-2": "'Builder'",
     "description": "I Analyse Data. I Build Products. I Optimise Processes.",
     "badge": "Available · 2025",
     "photo-alt": "Christian Rodes"
@@ -31,8 +31,8 @@
 
   "About": {
     "label": "About Me",
-    "p1": "I see myself as a <b>Digital 'Builder'</b> operating at the intersection of <b>project management</b>, <b>data analysis</b>, and <b>software development</b>. My focus is not just managing tasks — it's designing <b>efficient systems</b>.",
-    "p2": "I'm passionate about transforming operational complexity into clear workflows through <b>Business Intelligence</b> and <b>automation</b>. I'm not limited to overseeing a product's lifecycle; I have the <b>technical skills</b> to get involved in the code (<b>Next.js/TS</b>) and ensure execution is as solid as the strategy.",
+    "p1": "I see myself as a <b>Digital ''Builder''</b> operating at the intersection of <b>project management</b>, <b>data analysis</b>, and <b>software development</b>. My focus is not just managing tasks — it''s designing <b>efficient systems</b>.",
+    "p2": "I''m passionate about transforming operational complexity into clear workflows through <b>Business Intelligence</b> and <b>automation</b>. I''m not limited to overseeing a product''s lifecycle; I have the <b>technical skills</b> to get involved in the code (<b>Next.js/TS</b>) and ensure execution is as solid as the strategy.",
     "p3": "My goal is simple: <b>optimise processes</b> so technology works for the business, not the other way around."
   },
 
@@ -60,9 +60,23 @@
     }
   },
 
+  "FeaturedProject": {
+    "label": "Featured Project",
+    "title": "ProductPartner Web",
+    "about-label": "About the Project",
+    "desc": "Creative direction and development of the services and case studies sections.",
+    "tag1": "Creative Direction",
+    "tag2": "Frontend Dev"
+  },
+
   "Projects": {
     "label": "Featured Projects",
     "cta": "View more projects",
+    "featured": {
+      "title": "ProductPartner Web",
+      "desc": "Creative direction and development of the services and case studies sections.",
+      "metric": "Live Project"
+    },
     "items": {
       "0": {
         "title": "eDesk",
@@ -86,14 +100,19 @@
     "label": "Education",
     "items": {
       "0": {
-        "degree": "Bachelor's Degree in Business Administration",
+        "degree": "Dual Degree in Business Management & Administration and Tourism Management",
         "school": "University of Alicante",
-        "period": "2010 — 2014"
+        "period": "2013 — 2018"
       },
       "1": {
-        "degree": "Professional Scrum Product Owner I (PSPO I)",
-        "school": "Scrum.org",
-        "period": "2018"
+        "degree": "International Business",
+        "school": "Hochschule für Technik und Wirtschaft Dresden (HTW)",
+        "period": "2017 — 2018"
+      },
+      "2": {
+        "degree": "AS, Web Development - Software Engineering",
+        "school": "IES Severo Ochoa",
+        "period": "2024 — 2026"
       }
     }
   },
@@ -102,28 +121,20 @@
     "label": "Skills",
     "items": {
       "0": {
-        "category": "Product Management.",
-        "desc": "Roadmaps, OKRs, discovery, prioritisation, and end-to-end product lifecycle management."
+        "category": "Product Operations.",
+        "desc": "Design and optimisation of operational workflows through automation. Product lifecycle management with a focus on process efficiency."
       },
       "1": {
-        "category": "Data Analysis.",
-        "desc": "SQL, basic Python, Tableau. Business metrics, KPIs, and data-driven decision making."
+        "category": "Data Strategy & BI.",
+        "desc": "Data-driven decision making (SQL, Tableau, KPIs). Business metrics analysis to transform insights into strategic roadmaps."
       },
       "2": {
-        "category": "Operations & Processes.",
-        "desc": "Operational flow design and optimisation, automation, and continuous improvement."
+        "category": "Technical Development.",
+        "desc": "Building digital products with Next.js, TypeScript and Tailwind CSS. AI integration to accelerate development and innovation."
       },
       "3": {
-        "category": "Agile & Scrum.",
-        "desc": "Sprint facilitation, retrospectives, planning, and backlog management in distributed teams."
-      },
-      "4": {
-        "category": "UX Research.",
-        "desc": "User interviews, empathy mapping, usability testing, and synthesis of actionable insights."
-      },
-      "5": {
-        "category": "Cross-functional Leadership.",
-        "desc": "Multidisciplinary team coordination, stakeholder communication, and strategic alignment."
+        "category": "Agile Leadership.",
+        "desc": "Coordination of multidisciplinary teams and stakeholders under Agile methodologies. Clear communication between business and technical profiles."
       }
     }
   },
@@ -209,6 +220,14 @@
     "form-message": "Message",
     "close": "Close",
     "send": "Send"
+  },
+
+  "Footer": {
+    "cv-button": "Download PDF Resume",
+    "location-label": "Location",
+    "location-value": "Elche, Spain",
+    "contact-label": "Contact Details",
+    "contact-email": "christianrodesvidal@gmail.com"
   },
 
   "Services": {

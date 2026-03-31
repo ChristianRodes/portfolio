@@ -60,9 +60,23 @@
     }
   },
 
+  "FeaturedProject": {
+    "label": "Proyecto Destacado",
+    "title": "ProductPartner Web",
+    "about-label": "Sobre el Proyecto",
+    "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito.",
+    "tag1": "Dirección Creativa",
+    "tag2": "Frontend Dev"
+  },
+
   "Projects": {
     "label": "Proyectos Destacados",
     "cta": "Ver más proyectos",
+    "featured": {
+      "title": "ProductPartner Web",
+      "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito.",
+      "metric": "Proyecto Live"
+    },
     "items": {
       "0": {
         "title": "eDesk",
@@ -86,14 +100,19 @@
     "label": "Educación",
     "items": {
       "0": {
-        "degree": "Grado en Administración y Dirección de Empresas",
+        "degree": "Doble Grado en ADE y Turismo",
         "school": "Universidad de Alicante",
-        "period": "2010 — 2014"
+        "period": "2013 — 2018"
       },
       "1": {
-        "degree": "Professional Scrum Product Owner I (PSPO I)",
-        "school": "Scrum.org",
-        "period": "2018"
+        "degree": "International Business",
+        "school": "Hochschule für Technik und Wirtschaft Dresden (HTW)",
+        "period": "2017 — 2018"
+      },
+      "2": {
+        "degree": "Desarrollo de Aplicaciones Web",
+        "school": "IES Severo Ochoa",
+        "period": "2024 — 2026"
       }
     }
   },
@@ -102,28 +121,20 @@
     "label": "Habilidades",
     "items": {
       "0": {
-        "category": "Gestión de Producto.",
-        "desc": "Roadmaps, OKRs, discovery, priorización y gestión del ciclo de vida completo del producto."
+        "category": "Product Operations.",
+        "desc": "Diseño y optimización de flujos operativos mediante automatización. Gestión del ciclo de vida del producto con foco en la eficiencia de procesos."
       },
       "1": {
-        "category": "Análisis de Datos.",
-        "desc": "SQL, Python básico, Tableau. Métricas de negocio, KPIs y toma de decisiones basada en datos."
+        "category": "Data Strategy & BI.",
+        "desc": "Toma de decisiones basada en datos (SQL, Tableau, KPIs). Análisis de métricas de negocio para transformar insights en roadmaps estratégicos."
       },
       "2": {
-        "category": "Operaciones & Procesos.",
-        "desc": "Diseño y optimización de flujos operativos, automatización y mejora continua."
+        "category": "Technical Development.",
+        "desc": "Construcción de productos digitales con Next.js, TypeScript y Tailwind CSS. Integración de IA para acelerar el desarrollo y la innovación."
       },
       "3": {
-        "category": "Agile & Scrum.",
-        "desc": "Facilitación de sprints, retrospectivas, planificación y gestión de backlogs en entornos distribuidos."
-      },
-      "4": {
-        "category": "UX Research.",
-        "desc": "Entrevistas de usuario, mapas de empatía, pruebas de usabilidad y síntesis de insights accionables."
-      },
-      "5": {
-        "category": "Liderazgo Cross-funcional.",
-        "desc": "Coordinación de equipos multidisciplinares, comunicación con stakeholders y alineación estratégica."
+        "category": "Agile Leadership.",
+        "desc": "Coordinación de equipos multidisciplinares y stakeholders bajo metodologías Agile. Comunicación clara entre negocio y perfiles técnicos."
       }
     }
   },
@@ -209,6 +220,14 @@
     "form-message": "Mensaje",
     "close": "Cerrar",
     "send": "Enviar"
+  },
+
+  "Footer": {
+    "cv-button": "Descargar CV en PDF",
+    "location-label": "Ubicación",
+    "location-value": "Elche, España",
+    "contact-label": "Contacto",
+    "contact-email": "christianrodesvidal@gmail.com"
   },
 
   "Services": {

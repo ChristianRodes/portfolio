@@ -62,8 +62,8 @@ export default function HeroSection() {
 							transition={{ duration: 0.85, ease: spring, delay: 0.18 }}
 							className="font-bold tracking-tighter leading-[0.88] text-[clamp(4rem,10vw,6.5rem)]"
 						>
-							<span className="block text-white italic font-normal">{t('headline-1')}</span>
-							<span className="block text-white">{t('headline-2')}</span>
+							<span className="block text-white mb-4">{t('headline-1')}</span>
+							<span className="block text-white italic font-normal">{t('headline-2')}</span>
 						</motion.h1>
 
 						{/* Description */}
