@@ -4,7 +4,7 @@
     "name-short": "I'm Chris",
     "headline-1": "'Builder'",
     "headline-2": "digital",
-    "description": "I build exceptional sites that deliver results.",
+    "description": "I Analyse Data. I Build Products. I Optimise Processes.",
     "badge": "Available · 2025",
     "photo-alt": "Christian Rodes"
   },
@@ -29,6 +29,105 @@
     "company": "Registered Limited Company in Alicante, Spain, CIF: ES-B16814840"
   },
 
+  "About": {
+    "label": "About Me",
+    "p1": "I see myself as a <b>Digital 'Builder'</b> operating at the intersection of <b>project management</b>, <b>data analysis</b>, and <b>software development</b>. My focus is not just managing tasks — it's designing <b>efficient systems</b>.",
+    "p2": "I'm passionate about transforming operational complexity into clear workflows through <b>Business Intelligence</b> and <b>automation</b>. I'm not limited to overseeing a product's lifecycle; I have the <b>technical skills</b> to get involved in the code (<b>Next.js/TS</b>) and ensure execution is as solid as the strategy.",
+    "p3": "My goal is simple: <b>optimise processes</b> so technology works for the business, not the other way around."
+  },
+
+  "Experience": {
+    "label": "Experience",
+    "items": {
+      "0": {
+        "company": "ProductPartner",
+        "role": "Junior Product Manager",
+        "period": "Oct 2025 — Present",
+        "impact": "I lead the creation of digital products from the discovery phase through to technical launch. My role combines high-fidelity interface design in Figma with real frontend development using Next.js and TypeScript. By coding my own prototypes, I ensure a frictionless transition between product vision and final code, delivering an optimised and technically scalable user experience."
+      },
+      "1": {
+        "company": "Auto1 Group",
+        "role": "Project Manager - B2B Operations",
+        "period": "May 2023 — May 2025",
+        "impact": "I managed critical operations for the European market at one of the largest B2B e-commerce platforms in the automotive sector. My focus was on process optimisation through large-scale data analysis with SQL, enabling me to identify bottlenecks and coordinate international teams to improve logistical and commercial efficiency. I acted as the analytical link that translated operational performance into strategic business decisions."
+      },
+      "2": {
+        "company": "Sprinter (JD Group)",
+        "role": "L&D Specialist & Process Bridge",
+        "period": "Oct 2020 — May 2023",
+        "impact": "I was part of the international expansion team, acting as the functional bridge between sales teams and the IT department. I facilitated the adoption of key tools such as Salesforce and POS systems, translating real day-to-day store needs into technical requirements for developers. My work ensured that technology was an enabler rather than a barrier during the company's growth into new markets."
+      }
+    }
+  },
+
+  "Projects": {
+    "label": "Featured Projects",
+    "cta": "View more projects",
+    "items": {
+      "0": {
+        "title": "eDesk",
+        "desc": "Product restructuring for a B2B SaaS platform with 7,000+ sellers. New discovery process, OKRs, and a retention-focused roadmap.",
+        "metric": "+22% customer retention"
+      },
+      "1": {
+        "title": "OkaDoc",
+        "desc": "Product strategy and execution for a multisided healthcare platform (B2B, B2C, B2B2C) with multi-country expansion and three verticals launched.",
+        "metric": "3 verticals in 18 months"
+      },
+      "2": {
+        "title": "airfocus",
+        "desc": "Strategic and operational advisory for an AI-powered product management platform with $10M+ in funding. Subsequently acquired by Lucid.",
+        "metric": "Acquired by Lucid"
+      }
+    }
+  },
+
+  "Education": {
+    "label": "Education",
+    "items": {
+      "0": {
+        "degree": "Bachelor's Degree in Business Administration",
+        "school": "University of Alicante",
+        "period": "2010 — 2014"
+      },
+      "1": {
+        "degree": "Professional Scrum Product Owner I (PSPO I)",
+        "school": "Scrum.org",
+        "period": "2018"
+      }
+    }
+  },
+
+  "Skills": {
+    "label": "Skills",
+    "items": {
+      "0": {
+        "category": "Product Management.",
+        "desc": "Roadmaps, OKRs, discovery, prioritisation, and end-to-end product lifecycle management."
+      },
+      "1": {
+        "category": "Data Analysis.",
+        "desc": "SQL, basic Python, Tableau. Business metrics, KPIs, and data-driven decision making."
+      },
+      "2": {
+        "category": "Operations & Processes.",
+        "desc": "Operational flow design and optimisation, automation, and continuous improvement."
+      },
+      "3": {
+        "category": "Agile & Scrum.",
+        "desc": "Sprint facilitation, retrospectives, planning, and backlog management in distributed teams."
+      },
+      "4": {
+        "category": "UX Research.",
+        "desc": "User interviews, empathy mapping, usability testing, and synthesis of actionable insights."
+      },
+      "5": {
+        "category": "Cross-functional Leadership.",
+        "desc": "Multidisciplinary team coordination, stakeholder communication, and strategic alignment."
+      }
+    }
+  },
+
   "Home": {
     "h1-01": "Crafting digital experiences ",
     "h1-02": "that actually deliver results",
@@ -40,7 +139,7 @@
     "founder": "Founder",
     "founder-at-m": "Founder at",
     "founder-at-f": "Founder at",
-    "cto-at": "CTO at", 
+    "cto-at": "CTO at",
     "specialism": "Our Specialism",
     "specialism-h1-01": "End-to-end digital ",
     "specialism-h1-02": "product solutions",
@@ -92,7 +191,7 @@
     "email-01-a": "Email Us",
     "email-02": "Prefer to email? Drop us a message and we'll get back to you.",
     "email-03": "Email us",
-    "about-us" : "About Us",
+    "about-us": "About Us",
     "about-h1": "The story so far",
     "about-p1-01": "Hey, ",
     "about-p1-02": "I'm Colin Cooper",
@@ -102,9 +201,9 @@
     "about-p5-01": "In 2022, I founded ",
     "about-p5-02": "ProductPartner",
     "about-p5-03": ", where I now work exclusively to create high-impact digital solutions.",
-    "quote-01": "“As a founder with a busy schedule, I needed someone who could make a difference with their expertise and confidence. Colin exceeded expectations, swiftly implementing a wave of positive changes.”",
-    "quote-02": "“Colin has all the skills you would want in a product leader: smart, creative, pragmatic, with a solid understanding of technology and a flair for design.“",
-    "quote-03": "“A detail-oriented and results-driven leader who brings a unique combination of product expertise and business acumen to every project he tackles.”",
+    "quote-01": "As a founder with a busy schedule, I needed someone who could make a difference with their expertise and confidence. Colin exceeded expectations, swiftly implementing a wave of positive changes.",
+    "quote-02": "Colin has all the skills you would want in a product leader: smart, creative, pragmatic, with a solid understanding of technology and a flair for design.",
+    "quote-03": "A detail-oriented and results-driven leader who brings a unique combination of product expertise and business acumen to every project he tackles.",
     "form-name": "Name",
     "form-email": "Email",
     "form-message": "Message",

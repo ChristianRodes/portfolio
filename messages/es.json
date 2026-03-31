@@ -4,7 +4,7 @@
     "name-short": "Soy Chris",
     "headline-1": "'Builder'",
     "headline-2": "digital",
-    "description": "Creo landings excepcionales y eficientes que multiplican tu visibilidad y resultados.",
+    "description": "Analizo Datos. Construyo Productos. Optimizo Procesos.",
     "badge": "Disponible · 2025",
     "photo-alt": "Christian Rodes"
   },
@@ -27,6 +27,105 @@
     "terms": "Términos de Uso",
     "copy": "Iterar Tech SL t/a ProductPartner",
     "company": "Empresa registrada en Alicante, España, CIF: ES-B16814840"
+  },
+
+  "About": {
+    "label": "Sobre Mí",
+    "p1": "Me considero un <b>'Builder' Digital</b> que opera en la intersección de la <b>gestión de proyectos</b>, el <b>análisis de datos</b> y el <b>desarrollo de software</b>. Mi enfoque no es solo gestionar tareas, sino diseñar <b>sistemas eficientes</b>.",
+    "p2": "Me apasiona transformar la complejidad operativa en flujos de trabajo claros mediante <b>Business Intelligence</b> y <b>automatización</b>. No me limito a supervisar el ciclo de vida de un producto; tengo la <b>capacidad técnica</b> para involucrarme en el código (<b>Next.js/TS</b>) y asegurar que la ejecución sea tan sólida como la estrategia.",
+    "p3": "Mi objetivo es simple: <b>optimizar procesos</b> para que la tecnología trabaje a favor del negocio, no al revés."
+  },
+
+  "Experience": {
+    "label": "Experiencia",
+    "items": {
+      "0": {
+        "company": "ProductPartner",
+        "role": "Junior Product Manager",
+        "period": "Oct 2025 — Actualidad",
+        "impact": "Lidero la creación de productos digitales desde la fase de descubrimiento hasta su lanzamiento técnico. Mi rol combina el diseño de interfaces de alta fidelidad en Figma con el desarrollo frontend real utilizando Next.js y TypeScript. Al programar mis propios prototipos, aseguro una transición sin fricciones entre la visión de producto y el código final, garantizando una experiencia de usuario optimizada y técnicamente escalable."
+      },
+      "1": {
+        "company": "Auto1 Group",
+        "role": "Project Manager - B2B Operations",
+        "period": "May 2023 — May 2025",
+        "impact": "Gestioné operativas críticas para el mercado europeo en uno de los mayores e-commerce B2B del sector automotriz. Mi enfoque se centró en la optimización de procesos mediante el análisis masivo de datos con SQL, permitiéndome identificar cuellos de botella y coordinar equipos internacionales para mejorar la eficiencia logística y comercial. Actué como el nexo analítico que traducía el rendimiento operativo en decisiones estratégicas de negocio."
+      },
+      "2": {
+        "company": "Sprinter (JD Group)",
+        "role": "L&D Specialist & Process Bridge",
+        "period": "Oct 2020 — May 2023",
+        "impact": "Formé parte del equipo de expansión internacional, actuando como el puente funcional entre los equipos de ventas y el departamento de IT. Facilité la adopción de herramientas clave como Salesforce y sistemas POS, traduciendo las necesidades reales del día a día en tienda a requerimientos técnicos para los desarrolladores. Mi trabajo aseguró que la tecnología fuera un habilitador y no una barrera durante el crecimiento de la compañía en nuevos mercados."
+      }
+    }
+  },
+
+  "Projects": {
+    "label": "Proyectos Destacados",
+    "cta": "Ver más proyectos",
+    "items": {
+      "0": {
+        "title": "eDesk",
+        "desc": "Reestructuración de la gestión de producto para una plataforma SaaS B2B con más de 7.000 vendedores. Nuevo proceso de discovery, OKRs y hoja de ruta orientada a retención.",
+        "metric": "+22% retención de clientes"
+      },
+      "1": {
+        "title": "OkaDoc",
+        "desc": "Estrategia y ejecución de producto para una plataforma multisectorial de salud (B2B, B2C, B2B2C) con expansión a múltiples países y tres verticales lanzadas.",
+        "metric": "3 verticales en 18 meses"
+      },
+      "2": {
+        "title": "airfocus",
+        "desc": "Asesoramiento estratégico y operativo para una plataforma de gestión de producto con IA y más de 10M$ en financiación. Posteriormente adquirida por Lucid.",
+        "metric": "Adquirida por Lucid"
+      }
+    }
+  },
+
+  "Education": {
+    "label": "Educación",
+    "items": {
+      "0": {
+        "degree": "Grado en Administración y Dirección de Empresas",
+        "school": "Universidad de Alicante",
+        "period": "2010 — 2014"
+      },
+      "1": {
+        "degree": "Professional Scrum Product Owner I (PSPO I)",
+        "school": "Scrum.org",
+        "period": "2018"
+      }
+    }
+  },
+
+  "Skills": {
+    "label": "Habilidades",
+    "items": {
+      "0": {
+        "category": "Gestión de Producto.",
+        "desc": "Roadmaps, OKRs, discovery, priorización y gestión del ciclo de vida completo del producto."
+      },
+      "1": {
+        "category": "Análisis de Datos.",
+        "desc": "SQL, Python básico, Tableau. Métricas de negocio, KPIs y toma de decisiones basada en datos."
+      },
+      "2": {
+        "category": "Operaciones & Procesos.",
+        "desc": "Diseño y optimización de flujos operativos, automatización y mejora continua."
+      },
+      "3": {
+        "category": "Agile & Scrum.",
+        "desc": "Facilitación de sprints, retrospectivas, planificación y gestión de backlogs en entornos distribuidos."
+      },
+      "4": {
+        "category": "UX Research.",
+        "desc": "Entrevistas de usuario, mapas de empatía, pruebas de usabilidad y síntesis de insights accionables."
+      },
+      "5": {
+        "category": "Liderazgo Cross-funcional.",
+        "desc": "Coordinación de equipos multidisciplinares, comunicación con stakeholders y alineación estratégica."
+      }
+    }
   },
 
   "Home": {
@@ -102,9 +201,9 @@
     "about-p5-01": "En 2022, fundé ",
     "about-p5-02": "ProductPartner",
     "about-p5-03": ", donde ahora me dedico a crear soluciones digitales que marcan la diferencia.",
-    "quote-01": "“Como fundador con una agenda ocupada, necesitaba a alguien con experiencia y confianza para marcar la diferencia. Colin superó mis expectativas, implementando mejoras clave rápidamente.”",
-    "quote-02": "“Colin tiene todas las habilidades de un líder de producto: inteligente, creativo, pragmático, con un sólido conocimiento tecnológico y un gran sentido del diseño.”",
-    "quote-03": "“Un líder orientado a los detalles y enfocado en resultados, que combina conocimientos de producto y visión empresarial en cada proyecto.”",
+    "quote-01": "Como fundador con una agenda ocupada, necesitaba a alguien con experiencia y confianza para marcar la diferencia. Colin superó mis expectativas, implementando mejoras clave rápidamente.",
+    "quote-02": "Colin tiene todas las habilidades de un líder de producto: inteligente, creativo, pragmático, con un sólido conocimiento tecnológico y un gran sentido del diseño.",
+    "quote-03": "Un líder orientado a los detalles y enfocado en resultados, que combina conocimientos de producto y visión empresarial en cada proyecto.",
     "form-name": "Nombre",
     "form-email": "Correo electrónico",
     "form-message": "Mensaje",

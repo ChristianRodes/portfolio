@@ -10,12 +10,12 @@ export default function HeroSection() {
 	const t = useTranslations('Hero');
 
 	return (
-		<section className="min-h-[100svh] bg-[#1F4C34] flex items-center overflow-hidden">
+		<section className="sticky top-0 z-0 min-h-[100svh] bg-[#1F4C34] flex items-center overflow-hidden">
 			<div className="w-full max-w-5xl mx-auto px-6 md:px-10 xl:px-0 py-24">
 				<div className="flex flex-col lg:flex-row items-center gap-14 lg:gap-0">
 
 					{/* ── LEFT: Photo + greeting ── */}
-					<div className="flex flex-col items-center lg:items-start lg:flex-1 gap-5 lg:pr-16">
+					<div className="flex flex-col items-center lg:flex-1 gap-5 lg:pr-16">
 
 						<motion.div
 							initial={{ opacity: 0, y: 36 }}
@@ -37,7 +37,7 @@ export default function HeroSection() {
 							initial={{ opacity: 0, y: 12 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.6, ease: spring, delay: 0.25 }}
-							className="text-center lg:text-left"
+							className="text-center"
 						>
 							<span className="block text-white/40 text-xs uppercase tracking-[0.25em] mb-1.5">
 								{t('greeting')}
@@ -53,20 +53,7 @@ export default function HeroSection() {
 					<div className="hidden lg:block w-px h-80 bg-white/10 shrink-0" />
 
 					{/* ── RIGHT: Headline + description ── */}
-					<div className="flex flex-col lg:flex-1 lg:pl-16 gap-6 lg:gap-8 text-center lg:text-left">
-
-						{/* Availability dot */}
-						<motion.div
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ duration: 0.5, delay: 0.1 }}
-							className="flex items-center justify-center lg:justify-start gap-2"
-						>
-							<span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-							<span className="text-white/35 text-[10px] uppercase tracking-[0.25em]">
-								{t('badge')}
-							</span>
-						</motion.div>
+					<div className="flex flex-col lg:flex-1 lg:pl-16 gap-6 lg:gap-8 text-center">
 
 						{/* Main headline */}
 						<motion.h1
@@ -84,7 +71,7 @@ export default function HeroSection() {
 							initial={{ opacity: 0, y: 14 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.65, ease: spring, delay: 0.36 }}
-							className="text-white/50 text-base md:text-lg leading-relaxed max-w-xs lg:max-w-sm mx-auto lg:mx-0"
+							className="text-white/50 text-base md:text-lg leading-relaxed max-w-xs lg:max-w-sm mx-auto"
 						>
 							{t('description')}
 						</motion.p>
