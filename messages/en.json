@@ -4,7 +4,8 @@
     "name-short": "I'm Chris",
     "headline-1": "Digital",
     "headline-2": "'Builder'",
-    "description": "I Analyse Data. I Build Products. I Optimise Processes.",
+    "description": "I Analyse Data. Build Products. Optimise Processes.",
+    "cta": "Get in touch",
     "badge": "Available · 2025",
     "photo-alt": "Christian Rodes"
   },
@@ -67,6 +68,27 @@
     "desc": "Creative direction and development of the services and case studies sections.",
     "tag1": "Creative Direction",
     "tag2": "Frontend Dev"
+  },
+
+  "CaseStudyPP": {
+    "label": "Case Study",
+    "title": "ProductPartner Web",
+    "desc": "Creative direction and development of the services and case studies sections for ProductPartner''s marketing site.",
+    "tag1": "Creative Direction",
+    "tag2": "Frontend Dev",
+    "delivery-title": "End-to-end delivery",
+    "delivery-1-title": "Creative Direction",
+    "delivery-1-b1": "Defined the visual language and layout system for the services section.",
+    "delivery-1-b2": "Designed high-fidelity prototypes in Figma before moving to code.",
+    "delivery-1-b3": "Ensured brand consistency across all pages and breakpoints.",
+    "delivery-2-title": "Agile Development",
+    "delivery-2-b1": "Built with Next.js, TypeScript and Tailwind CSS for performance and scalability.",
+    "delivery-2-b2": "Implemented smooth animations with Framer Motion to enhance user experience.",
+    "delivery-2-b3": "Iterated quickly based on feedback, shipping incremental improvements.",
+    "stack-title": "Tech Stack",
+    "quote": "\"ProductPartner helped us to unearth a gem of insights that reshaped how we approach product strategy.\"",
+    "quote-author": "Colin Cooper",
+    "quote-role": "CEO, ProductPartner"
   },
 
   "Projects": {

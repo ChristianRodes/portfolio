@@ -5,6 +5,7 @@
     "headline-1": "'Builder'",
     "headline-2": "digital",
     "description": "Analizo Datos. Construyo Productos. Optimizo Procesos.",
+    "cta": "Contactar",
     "badge": "Disponible · 2025",
     "photo-alt": "Christian Rodes"
   },
@@ -67,6 +68,27 @@
     "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito.",
     "tag1": "Dirección Creativa",
     "tag2": "Frontend Dev"
+  },
+
+  "CaseStudyPP": {
+    "label": "Case Study",
+    "title": "ProductPartner Web",
+    "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito para el sitio web de ProductPartner.",
+    "tag1": "Dirección Creativa",
+    "tag2": "Frontend Dev",
+    "delivery-title": "Entrega end-to-end",
+    "delivery-1-title": "Dirección Creativa",
+    "delivery-1-b1": "Definí el lenguaje visual y el sistema de layout para la sección de servicios.",
+    "delivery-1-b2": "Diseñé prototipos de alta fidelidad en Figma antes de pasar al código.",
+    "delivery-1-b3": "Aseguré la coherencia de marca en todas las páginas y breakpoints.",
+    "delivery-2-title": "Desarrollo Ágil",
+    "delivery-2-b1": "Construido con Next.js, TypeScript y Tailwind CSS para rendimiento y escalabilidad.",
+    "delivery-2-b2": "Implementé animaciones fluidas con Framer Motion para mejorar la experiencia.",
+    "delivery-2-b3": "Iteré rápidamente según feedback, entregando mejoras incrementales.",
+    "stack-title": "Stack Tecnológico",
+    "quote": "\"ProductPartner nos ayudó a descubrir insights clave que transformaron nuestra estrategia de producto.\"",
+    "quote-author": "Colin Cooper",
+    "quote-role": "CEO, ProductPartner"
   },
 
   "Projects": {

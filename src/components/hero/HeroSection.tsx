@@ -76,6 +76,21 @@ export default function HeroSection() {
 							{t('description')}
 						</motion.p>
 
+						{/* CTA */}
+						<motion.div
+							initial={{ opacity: 0, y: 14 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.65, ease: spring, delay: 0.48 }}
+							className="flex justify-center"
+						>
+							<a
+								href="#contact"
+								className="inline-flex items-center gap-2 bg-white text-[#1F4C34] text-sm font-semibold px-7 py-3.5 rounded-full hover:bg-white/90 transition-colors"
+							>
+								{t('cta')}
+							</a>
+						</motion.div>
+
 					</div>
 				</div>
 			</div>

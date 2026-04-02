@@ -19,21 +19,11 @@ export default function FooterSection() {
       </div>
 
       {/* Dark footer */}
-      <footer className="bg-[#1F4C34] py-16 px-6">
-        <div className="max-w-2xl mx-auto md:px-10 xl:px-0 space-y-10">
-          {/* Location */}
-          <div className="text-center">
-            <p className="text-xs tracking-[0.2em] uppercase text-[#F9F7EB]/50 mb-2">
-              {t('location-label')}
-            </p>
-            <p className="text-lg font-bold tracking-widest uppercase text-[#F9F7EB]">
-              {t('location-value')}
-            </p>
-          </div>
-
+      <footer id="contact" className="bg-[#1F4C34] py-16 px-6">
+        <div className="max-w-2xl mx-auto md:px-10 xl:px-0">
           {/* Contact */}
           <div className="text-center">
-            <p className="text-xs tracking-[0.2em] uppercase text-[#F9F7EB]/50 mb-2">
+            <p className="text-sm tracking-[0.2em] uppercase text-[#F9F7EB]/50 mb-2">
               {t('contact-label')}
             </p>
             <a
@@ -51,7 +41,7 @@ export default function FooterSection() {
             href="https://www.linkedin.com/in/christian-rodes/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs tracking-[0.15em] uppercase text-[#F9F7EB]/50 hover:text-[#F9F7EB] transition-colors"
+            className="text-sm tracking-[0.15em] uppercase text-[#F9F7EB]/50 hover:text-[#F9F7EB] transition-colors"
           >
             LinkedIn
           </a>
@@ -59,7 +49,7 @@ export default function FooterSection() {
             href="https://github.com/ChristianRodes"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs tracking-[0.15em] uppercase text-[#F9F7EB]/50 hover:text-[#F9F7EB] transition-colors"
+            className="text-sm tracking-[0.15em] uppercase text-[#F9F7EB]/50 hover:text-[#F9F7EB] transition-colors"
           >
             GitHub
           </a>

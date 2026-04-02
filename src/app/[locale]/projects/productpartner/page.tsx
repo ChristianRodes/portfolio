@@ -4,7 +4,7 @@ import Navbar from '@/components/nav/Navbar';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'FeaturedProject' });
+  const t = await getTranslations({ locale, namespace: 'CaseStudyPP' });
   return {
     title: t('title'),
     description: t('desc'),
