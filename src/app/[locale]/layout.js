@@ -19,6 +19,18 @@ export const metadata = {
 		icon: "/img/global/logo 1.webp",
 		apple: "/img/global/logo 1.webp",
 	},
+	openGraph: {
+		title: "Christian Rodes — Digital Builder",
+		description: "Junior Product Manager & Digital Builder. I analyse data, build products and optimise processes.",
+		images: [{ url: "/og.png", width: 1200, height: 630 }],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Christian Rodes — Digital Builder",
+		description: "Junior Product Manager & Digital Builder. I analyse data, build products and optimise processes.",
+		images: ["/og.png"],
+	},
 };
 
 export default async function LocaleLayout({ children, params }) {
