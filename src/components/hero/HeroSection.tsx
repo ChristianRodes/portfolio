@@ -11,9 +11,9 @@ export default function HeroSection() {
 	const locale = useLocale();
 
 	return (
-		<section className="sticky top-0 z-0 min-h-[100svh] bg-[#1F4C34] flex items-center overflow-hidden">
-			<div className="w-full max-w-5xl mx-auto px-6 md:px-10 xl:px-0 py-24">
-				<div className="flex flex-col lg:flex-row items-center gap-14 lg:gap-0">
+		<section className="sticky top-0 z-0 min-h-[100svh] bg-[#1F4C34] flex items-center">
+			<div className="w-full max-w-5xl mx-auto px-6 md:px-10 xl:px-0 pt-20 pb-10 md:py-24">
+				<div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-0">
 
 					{/* ── LEFT: Photo + greeting ── */}
 					<div className="flex flex-col items-center lg:flex-1 gap-5 lg:pr-16">
@@ -22,7 +22,7 @@ export default function HeroSection() {
 							initial={{ opacity: 0, y: 36 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.9, ease: spring }}
-							className="relative w-52 md:w-60 lg:w-72 aspect-[3/4] rounded-[360px] overflow-hidden"
+							className="relative w-36 md:w-60 lg:w-72 aspect-[3/4] rounded-[360px] overflow-hidden"
 							style={{ filter: 'drop-shadow(0 28px 52px rgba(0,0,0,0.55))' }}
 						>
 							<Image
@@ -61,7 +61,7 @@ export default function HeroSection() {
 							initial={{ opacity: 0, x: 28 }}
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.85, ease: spring, delay: 0.18 }}
-							className="font-bold tracking-tighter leading-[0.88] text-[clamp(4rem,10vw,6.5rem)]"
+							className="font-bold tracking-tighter leading-[0.88] text-[clamp(3rem,10vw,6.5rem)]"
 						>
 							<span className={`block text-white mb-4 ${locale === 'en' ? 'font-bold' : 'italic font-normal'}`}>{t('headline-1')}</span>
 							<span className={`block text-white ${locale === 'en' ? 'italic font-normal' : 'font-bold'}`}>{t('headline-2')}</span>
