@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/routing';
+import { Link, useRouter, usePathname } from '@/i18n/routing';
 
 export default function Navbar() {
   const locale = useLocale();
@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 h-14 bg-[#1F4C34] flex items-center justify-between px-6 md:px-10">
-      <a href="#top" className="md:block hidden">
+      <Link href="/" className="md:block hidden">
         <Image
           src="/img/global/logo 1.webp"
           alt="CR"
@@ -25,9 +25,9 @@ export default function Navbar() {
           className="rounded-full"
           priority
         />
-      </a>
+      </Link>
       <div className="flex items-center gap-4 md:gap-0 ml-auto md:ml-0">
-        <a href="#top" className="md:hidden">
+        <Link href="/" className="md:hidden">
           <Image
             src="/img/global/logo 1.webp"
             alt="CR"
@@ -36,7 +36,7 @@ export default function Navbar() {
             className="rounded-full"
             priority
           />
-        </a>
+        </Link>
         <button
           onClick={toggleLocale}
           className="text-white/60 hover:text-white text-xs uppercase tracking-[0.25em] transition-colors duration-200 cursor-pointer"
