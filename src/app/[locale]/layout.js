@@ -13,11 +13,11 @@ const inter = Inter({
 });
 
 export const metadata = {
-	title: "Portfolio de Christian",
-	description: "Portfolio personal de Christian Rodes Vidal",
+	title: "Christian Rodes — Digital Builder",
+	description: "Junior Product Manager & Digital Builder. I analyse data, build products and optimise processes.",
 	icons: {
-		icon: "/img/global/logo 1.webp",
-		apple: "/img/global/logo 1.webp",
+		icon: "/favicons/favicon.ico",
+		apple: "/favicons/apple-touch-icon.png",
 	},
 };
 
@@ -32,8 +32,8 @@ export default async function LocaleLayout({ children, params }) {
 	return (
 		<html lang={locale} className="scroll-smooth light">
 			<head>
-				<link rel="icon" type="image/webp" href="/img/global/logo 1.webp" />
-				<link rel="apple-touch-icon" href="/img/global/logo 1.webp" />
+				<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
+				<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
 			</head>
 			<body className={inter.className}>
 				<NextIntlClientProvider messages={messages}>
