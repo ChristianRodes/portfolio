@@ -14,10 +14,10 @@ export default function Home() {
 			<HeroSection />
 			<div className="relative z-10">
 				<AboutSection />
+				<SkillsSection />
 				<ExperienceSection />
 				<ProjectsSection />
 				<EducationSection />
-				<SkillsSection />
 				<FooterSection />
 			</div>
 		</main>

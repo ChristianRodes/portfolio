@@ -20,8 +20,8 @@ export default function Navbar() {
         <Image
           src="/img/global/logo 1.webp"
           alt="CR"
-          width={24}
-          height={24}
+          width={32}
+          height={32}
           className="rounded-full"
           priority
         />
