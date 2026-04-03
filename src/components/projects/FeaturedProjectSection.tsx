@@ -213,7 +213,7 @@ export default function FeaturedProjectSection() {
           transition={{ duration: 0.7, ease: spring }}
           className="max-w-2xl mx-auto text-center"
         >
-          <span className="block text-5xl text-[#1F4C34]/20 font-serif leading-none mb-6" aria-hidden="true">"</span>
+          <span className="block text-5xl text-[#1F4C34]/20 font-serif leading-none mb-6" aria-hidden="true">{'\u201C'}</span>
           <p className="text-[#1F4C34] text-xl md:text-2xl font-medium leading-relaxed mb-10">
             {t('quote')}
           </p>
