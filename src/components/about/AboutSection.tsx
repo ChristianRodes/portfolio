@@ -26,9 +26,10 @@ export default function AboutSection() {
         >
           <SectionLabel>{t('label')}</SectionLabel>
           <div className="space-y-5 text-[#1F4C34] text-base leading-relaxed">
-            <p>{t.rich('p1', { b: bold })}</p>
-            <p>{t.rich('p2', { b: bold })}</p>
-            <p>{t.rich('p3', { b: bold })}</p>
+            {(['p1', 'p2', 'p3'] as const).map((key) => {
+              const content = t.rich(key, { b: bold });
+              return content ? <p key={key}>{content}</p> : null;
+            })}
           </div>
         </motion.div>
       </div>

@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import SectionLabel from '@/components/ui/section-label';
 
 const spring = [0.22, 1, 0.36, 1] as const;
-const KEYS = ['0', '1', '2', '3'] as const;
+const KEYS = ['1', '2', '3'] as const;
 
 export default function SkillsSection() {
   const t = useTranslations('Skills');

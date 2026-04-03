@@ -32,13 +32,14 @@
 
   "About": {
     "label": "About Me",
-    "p1": "I see myself as a <b>Digital ''Builder''</b> operating at the intersection of <b>project management</b>, <b>data analysis</b>, and <b>software development</b>. My focus is not just managing tasks — it''s designing <b>efficient systems</b>.",
-    "p2": "I''m passionate about transforming operational complexity into clear workflows through <b>Business Intelligence</b> and <b>automation</b>. I''m not limited to overseeing a product''s lifecycle; I have the <b>technical skills</b> to get involved in the code (<b>Next.js/TS</b>) and ensure execution is as solid as the strategy.",
-    "p3": "My goal is simple: <b>optimise processes</b> so technology works for the business, not the other way around."
+    "p1": "I see myself as a <b>Digital ''Builder''</b> operating at the intersection of <b>project management</b>, <b>data analysis</b> and <b>software development</b>. My focus is on optimising processes so that technology works for the business, not the other way around.",
+    "p2": "",
+    "p3": ""
   },
 
   "Experience": {
     "label": "Experience",
+    "show-more": "Show more",
     "items": {
       "0": {
         "company": "ProductPartner",

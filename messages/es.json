@@ -32,13 +32,14 @@
 
   "About": {
     "label": "Sobre Mí",
-    "p1": "Me considero un <b>'Builder' Digital</b> que opera en la intersección de la <b>gestión de proyectos</b>, el <b>análisis de datos</b> y el <b>desarrollo de software</b>. Mi enfoque no es solo gestionar tareas, sino diseñar <b>sistemas eficientes</b>.",
-    "p2": "Me apasiona transformar la complejidad operativa en flujos de trabajo claros mediante <b>Business Intelligence</b> y <b>automatización</b>. No me limito a supervisar el ciclo de vida de un producto; tengo la <b>capacidad técnica</b> para involucrarme en el código (<b>Next.js/TS</b>) y asegurar que la ejecución sea tan sólida como la estrategia.",
-    "p3": "Mi objetivo es simple: <b>optimizar procesos</b> para que la tecnología trabaje a favor del negocio, no al revés."
+    "p1": "Me considero un <b>''Builder'' Digital</b> que opera en la intersección de la <b>gestión de proyectos</b>, el <b>análisis de datos</b> y el <b>desarrollo de software</b>. Mi foco está en optimizar procesos para que la tecnología trabaje a favor del negocio, no al revés.",
+    "p2": "",
+    "p3": ""
   },
 
   "Experience": {
     "label": "Experiencia",
+    "show-more": "Ver más",
     "items": {
       "0": {
         "company": "ProductPartner",
@@ -119,7 +120,7 @@
   },
 
   "Education": {
-    "label": "Educación",
+    "label": "Formación",
     "items": {
       "0": {
         "degree": "Doble Grado en ADE y Turismo",
