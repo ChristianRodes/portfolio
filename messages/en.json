@@ -72,11 +72,11 @@
 
   "CaseStudyPP": {
     "label": "Case Study",
-    "title": "ProductPartner Web",
+    "title": "ProductPartner",
     "desc": "Creative direction and development of the services and case studies sections for ProductPartner''s marketing site.",
     "tag1": "Creative Direction",
     "tag2": "Frontend Dev",
-    "delivery-title": "End-to-end delivery",
+    "delivery-title": "End-to-end",
     "delivery-1-title": "Creative Direction",
     "delivery-1-b1": "Defined the visual language and layout system for the services section.",
     "delivery-1-b2": "Designed high-fidelity prototypes in Figma before moving to code.",
@@ -86,7 +86,7 @@
     "delivery-2-b2": "Implemented smooth animations with Framer Motion to enhance user experience.",
     "delivery-2-b3": "Iterated quickly based on feedback, shipping incremental improvements.",
     "stack-title": "Tech Stack",
-    "quote": "\"ProductPartner helped us to unearth a gem of insights that reshaped how we approach product strategy.\"",
+    "quote": "\"He is reliable, technically proficient, and a pleasure to work with. I thoroughly recommend him.\"",
     "quote-author": "Colin Cooper",
     "quote-role": "CEO, ProductPartner"
   },

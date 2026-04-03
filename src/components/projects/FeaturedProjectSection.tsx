@@ -9,17 +9,15 @@ import FooterSection from '@/components/footer/FooterSection';
 const spring = [0.22, 1, 0.36, 1] as const;
 
 const TECH_STACK = [
-  { name: 'GitHub',         src: '/img/logos/github-icon.svg' },
-  { name: 'TypeScript',     src: '/img/logos/typescript.svg' },
-  { name: 'Framer Motion',  src: '/img/logos/framer-motion.svg' },
-  { name: 'shadcn/ui',      src: '/img/logos/shadcn.svg' },
   { name: 'DigitalOcean',   src: '/img/logos/digitalocean.svg' },
-  { name: 'Tailwind CSS',   src: '/img/logos/tailwind.webp' },
-  { name: 'Vercel',         src: '/img/logos/vercel.webp' },
+  { name: 'GitHub',         src: '/img/logos/github-icon.svg' },
   { name: 'Node.js',        src: '/img/logos/node.webp' },
   { name: 'Next.js',        src: '/img/logos/nextjs.svg' },
+  { name: 'TypeScript',     src: '/img/logos/typescript.svg' },
   { name: 'React',          src: '/img/logos/react.svg' },
+  { name: 'Framer Motion',  src: '/img/logos/framer-motion.svg' },
   { name: 'Figma',          src: '/img/logos/figma.svg' },
+  { name: 'shadcn/ui',      src: '/img/logos/shadcn.svg' },
 ];
 
 // Tripled so the carousel always looks full regardless of screen width
@@ -37,21 +35,33 @@ function DeliveryRow({
   title,
   bullets,
   imageLeft,
-  index,
-  inView,
+  imageSrc,
 }: {
   title: string;
   bullets: string[];
   imageLeft: boolean;
-  index: number;
-  inView: boolean;
+  imageSrc: string;
 }) {
-  const imgPlaceholder = (
-    <div className="w-full rounded-2xl bg-[#1F4C34] self-stretch min-h-[260px]" />
+  const imgEl = (
+    <motion.div
+      initial={{ opacity: 0, x: imageLeft ? -48 : 48 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.7, ease: spring }}
+      className="relative w-full min-h-[260px]"
+    >
+      <Image src={imageSrc} alt={title} fill className="object-contain" />
+    </motion.div>
   );
 
-  const content = (
-    <div className="flex flex-col justify-center h-full py-2">
+  const contentEl = (
+    <motion.div
+      initial={{ opacity: 0, x: imageLeft ? 48 : -48 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.7, ease: spring }}
+      className="flex flex-col justify-center h-full py-2"
+    >
       <h3 className="text-2xl md:text-3xl font-bold text-[#1F4C34] mb-6 leading-tight">{title}</h3>
       <ul className="space-y-4">
         {bullets.map((b, i) => (
@@ -61,34 +71,22 @@ function DeliveryRow({
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.65, ease: spring, delay: index * 0.15 }}
-      className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-stretch"
-    >
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
       {imageLeft ? (
-        <>
-          {imgPlaceholder}
-          {content}
-        </>
+        <>{imgEl}{contentEl}</>
       ) : (
-        <>
-          {content}
-          {imgPlaceholder}
-        </>
+        <>{contentEl}{imgEl}</>
       )}
-    </motion.div>
+    </div>
   );
 }
 
 export default function FeaturedProjectSection() {
   const t = useTranslations('CaseStudyPP');
-  const { ref: deliveryRef, inView: deliveryInView } = useInView({ triggerOnce: true, threshold: 0.05 });
   const { ref: testimonialRef, inView: testimonialInView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
@@ -115,7 +113,19 @@ export default function FeaturedProjectSection() {
               </span>
             </div>
           </div>
-          <div className="w-full aspect-video rounded-2xl bg-white/10" />
+          <a
+            href="https://www.productpartner.io/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block relative w-full aspect-video transition-transform duration-300 ease-out hover:scale-[1.04]"
+          >
+            <Image
+              src="/img/global/pp_computer.svg"
+              alt="ProductPartner Web"
+              fill
+              className="object-contain drop-shadow-md"
+            />
+          </a>
         </div>
       </div>
 
@@ -132,37 +142,35 @@ export default function FeaturedProjectSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#1F4C34] inline-block relative">
               {t('delivery-title')}
               <svg
-                viewBox="0 0 320 18"
+                viewBox="0 0 320 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute -bottom-4 left-0 w-full"
+                className="absolute -bottom-7 left-[5%] w-[90%]"
                 aria-hidden="true"
               >
                 <path
-                  d="M4 13 C60 4, 140 16, 200 8 C240 3, 290 14, 316 9"
+                  d="M4 16 C80 6, 240 6, 316 12"
                   stroke="#1F4C34"
-                  strokeWidth="3"
+                  strokeWidth="5"
                   strokeLinecap="round"
-                  opacity="0.35"
+                  opacity="0.75"
                 />
               </svg>
             </h2>
           </motion.div>
 
-          <div ref={deliveryRef} className="flex flex-col gap-16 md:gap-24">
+          <div className="flex flex-col gap-16 md:gap-24">
             <DeliveryRow
               title={t('delivery-1-title')}
               bullets={[t('delivery-1-b1'), t('delivery-1-b2'), t('delivery-1-b3')]}
               imageLeft={true}
-              index={0}
-              inView={deliveryInView}
+              imageSrc="/img/global/design.svg"
             />
             <DeliveryRow
               title={t('delivery-2-title')}
               bullets={[t('delivery-2-b1'), t('delivery-2-b2'), t('delivery-2-b3')]}
               imageLeft={false}
-              index={1}
-              inView={deliveryInView}
+              imageSrc="/img/global/development.svg"
             />
           </div>
         </div>
@@ -205,6 +213,9 @@ export default function FeaturedProjectSection() {
           transition={{ duration: 0.7, ease: spring }}
           className="max-w-2xl mx-auto text-center"
         >
+          <div className="relative w-12 h-12 mx-auto mb-8">
+            <Image src="/img/global/logo_mark.png" alt="ProductPartner" fill className="object-contain" />
+          </div>
           <p className="text-[#1F4C34] text-xl md:text-2xl font-medium leading-relaxed mb-10">
             {t('quote')}
           </p>

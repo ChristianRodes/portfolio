@@ -2,8 +2,8 @@
   "Hero": {
     "greeting": "Hola! 👋",
     "name-short": "Soy Chris",
-    "headline-1": "digital",
-    "headline-2": "'Builder'",
+    "headline-1": "'Builder'",
+    "headline-2": "digital",
     "description": "Analizo Datos. Construyo Productos. Optimizo Procesos.",
     "cta": "Contactar",
     "badge": "Disponible · 2025",
@@ -72,11 +72,11 @@
 
   "CaseStudyPP": {
     "label": "Case Study",
-    "title": "ProductPartner Web",
+    "title": "ProductPartner",
     "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito para el sitio web de ProductPartner.",
     "tag1": "Dirección Creativa",
-    "tag2": "Frontend Dev",
-    "delivery-title": "Entrega end-to-end",
+    "tag2": "Desarrollo Web",
+    "delivery-title": "End-to-end",
     "delivery-1-title": "Dirección Creativa",
     "delivery-1-b1": "Definí el lenguaje visual y el sistema de layout para la sección de servicios.",
     "delivery-1-b2": "Diseñé prototipos de alta fidelidad en Figma antes de pasar al código.",
@@ -86,7 +86,7 @@
     "delivery-2-b2": "Implementé animaciones fluidas con Framer Motion para mejorar la experiencia.",
     "delivery-2-b3": "Iteré rápidamente según feedback, entregando mejoras incrementales.",
     "stack-title": "Stack Tecnológico",
-    "quote": "\"ProductPartner nos ayudó a descubrir insights clave que transformaron nuestra estrategia de producto.\"",
+    "quote": "\"Es una persona confiable, técnicamente competente y es un placer trabajar con él. Lo recomiendo totalmente.\"",
     "quote-author": "Colin Cooper",
     "quote-role": "CEO, ProductPartner"
   },
@@ -143,19 +143,19 @@
     "label": "Habilidades",
     "items": {
       "0": {
-        "category": "Product Operations.",
+        "category": "Dirección de Operaciones.",
         "desc": "Diseño y optimización de flujos operativos mediante automatización. Gestión del ciclo de vida del producto con foco en la eficiencia de procesos."
       },
       "1": {
-        "category": "Data Strategy & BI.",
+        "category": "Inteligencia de Negocio.",
         "desc": "Toma de decisiones basada en datos (SQL, Tableau, KPIs). Análisis de métricas de negocio para transformar insights en roadmaps estratégicos."
       },
       "2": {
-        "category": "Technical Development.",
+        "category": "Desarrollo Web.",
         "desc": "Construcción de productos digitales con Next.js, TypeScript y Tailwind CSS. Integración de IA para acelerar el desarrollo y la innovación."
       },
       "3": {
-        "category": "Agile Leadership.",
+        "category": "Gestión Ágil.",
         "desc": "Coordinación de equipos multidisciplinares y stakeholders bajo metodologías Agile. Comunicación clara entre negocio y perfiles técnicos."
       }
     }

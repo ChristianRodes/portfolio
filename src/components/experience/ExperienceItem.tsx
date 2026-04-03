@@ -29,10 +29,10 @@ export default function ExperienceItem({
       className="border-t border-[#E2DCC8] py-8 first:border-t-0 first:pt-0"
     >
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1.5">
-        <h3 className="font-bold text-[#1F4C34] text-base">{company}</h3>
+        <h3 className="font-bold text-[#1F4C34] text-base">{role}</h3>
         <span className="text-xs text-[#1F4C34]/60 shrink-0 tabular-nums">{period}</span>
       </div>
-      <p className="text-sm text-[#1F4C34]/60 mb-4 uppercase tracking-wide">{role}</p>
+      <p className="text-sm text-[#1F4C34]/60 mb-4 uppercase tracking-wide">{company}</p>
       <p className="text-sm text-[#1F4C34] leading-relaxed">{impact}</p>
     </motion.div>
   );

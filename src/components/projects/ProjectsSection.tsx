@@ -18,7 +18,7 @@ export default function ProjectsSection() {
             title={t('featured.title')}
             description={t('featured.desc')}
             metric={t('featured.metric')}
-            image="/img/global/ppheader.webp"
+            image="/img/global/pp_computer.svg"
             href="/projects/productpartner"
             index={0}
             inView={inView}

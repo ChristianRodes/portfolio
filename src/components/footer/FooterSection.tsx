@@ -1,16 +1,18 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function FooterSection() {
   const t = useTranslations('Footer');
+  const locale = useLocale();
+  const cvHref = locale === 'es' ? '/cvesp.pdf' : '/cveng.pdf';
 
   return (
     <>
       {/* CV download strip */}
       <div className="bg-[#F9F7EB] py-12 border-t border-[#E2DCC8] flex justify-center">
         <a
-          href="/cv.pdf"
+          href={cvHref}
           download
           className="inline-flex items-center gap-2 bg-[#1F4C34] text-[#F9F7EB] text-sm font-medium px-7 py-3.5 rounded-full hover:bg-[#1a3f2b] transition-colors"
         >
