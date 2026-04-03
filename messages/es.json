@@ -73,7 +73,7 @@
   "CaseStudyPP": {
     "label": "Case Study",
     "title": "ProductPartner",
-    "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito para el sitio web de ProductPartner.",
+    "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito para el sitio.",
     "tag1": "Dirección Creativa",
     "tag2": "Desarrollo Web",
     "delivery-title": "End-to-end",
@@ -95,7 +95,7 @@
     "label": "Proyectos Destacados",
     "cta": "Ver más proyectos",
     "featured": {
-      "title": "ProductPartner Web",
+      "title": "ProductPartner",
       "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito.",
       "metric": "Proyecto Live"
     },

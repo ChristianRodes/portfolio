@@ -73,7 +73,7 @@
   "CaseStudyPP": {
     "label": "Case Study",
     "title": "ProductPartner",
-    "desc": "Creative direction and development of the services and case studies sections for ProductPartner''s marketing site.",
+    "desc": "Creative direction and development of the services and case studies sections for the site.",
     "tag1": "Creative Direction",
     "tag2": "Frontend Dev",
     "delivery-title": "End-to-end",
@@ -95,7 +95,7 @@
     "label": "Featured Projects",
     "cta": "View more projects",
     "featured": {
-      "title": "ProductPartner Web",
+      "title": "ProductPartner",
       "desc": "Creative direction and development of the services and case studies sections.",
       "metric": "Live Project"
     },
