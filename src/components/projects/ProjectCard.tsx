@@ -54,6 +54,11 @@ export default function ProjectCard({
         <span className="inline-flex self-start items-center text-xs font-medium text-[#1F4C34] bg-[#1F4C34]/10 px-2.5 py-1 rounded-full mt-1">
           {metric}
         </span>
+        {href && (
+          <span className="inline-flex sm:hidden self-start items-center gap-1 text-xs text-[#1F4C34]/50 mt-2">
+            Tap to read more →
+          </span>
+        )}
       </div>
     </motion.div>
   );

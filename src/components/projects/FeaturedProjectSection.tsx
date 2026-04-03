@@ -76,10 +76,13 @@ function DeliveryRow({
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+      {/* Mobile: always image first. Desktop: respect imageLeft */}
+      <div className="md:hidden">{imgEl}</div>
+      <div className="md:hidden">{contentEl}</div>
       {imageLeft ? (
-        <>{imgEl}{contentEl}</>
+        <><div className="hidden md:block">{imgEl}</div><div className="hidden md:block">{contentEl}</div></>
       ) : (
-        <>{contentEl}{imgEl}</>
+        <><div className="hidden md:block">{contentEl}</div><div className="hidden md:block">{imgEl}</div></>
       )}
     </div>
   );

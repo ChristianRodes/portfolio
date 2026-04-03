@@ -31,17 +31,17 @@ export default function Navbar() {
           <Image
             src="/img/global/logo 1.webp"
             alt="CR"
-            width={24}
-            height={24}
+            width={28}
+            height={28}
             className="rounded-full"
             priority
           />
         </Link>
         <button
           onClick={toggleLocale}
-          className="text-white/60 hover:text-white text-xs uppercase tracking-[0.25em] transition-colors duration-200 cursor-pointer"
+          className="text-white/60 hover:text-white text-sm uppercase tracking-[0.2em] transition-colors duration-200 cursor-pointer px-3 py-2"
         >
-          {locale === 'es' ? 'EN' : 'ES'}
+          {locale === 'es' ? 'English' : 'Español'}
         </button>
       </div>
     </nav>
