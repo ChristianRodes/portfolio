@@ -213,13 +213,20 @@ export default function FeaturedProjectSection() {
           transition={{ duration: 0.7, ease: spring }}
           className="max-w-2xl mx-auto text-center"
         >
-          <span className="block text-5xl text-[#1F4C34]/20 font-serif leading-none mb-6" aria-hidden="true">{'\u201C'}</span>
+          <div className="relative w-12 h-12 mx-auto mb-8">
+            <Image src="/img/global/logo_mark.png" alt="ProductPartner" fill className="object-contain" />
+          </div>
           <p className="text-[#1F4C34] text-xl md:text-2xl font-medium leading-relaxed mb-10">
             {t('quote')}
           </p>
           <div className="flex flex-col items-center gap-3">
-            <div className="w-14 h-14 rounded-full bg-[#1F4C34] flex items-center justify-center shrink-0">
-              <span className="text-white font-bold text-base">CC</span>
+            <div className="relative w-14 h-14 rounded-full overflow-hidden">
+              <Image
+                src="/img/avatars/colin_cooper.webp"
+                alt="Colin Cooper"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <p className="text-[#1F4C34] font-bold text-sm">{t('quote-author')}</p>
