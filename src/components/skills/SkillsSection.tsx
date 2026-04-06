@@ -31,10 +31,10 @@ export default function SkillsSection() {
               transition={{ duration: 0.45, ease: spring, delay: index * 0.07 }}
               className="flex flex-col gap-4"
             >
-              <div className="relative w-full aspect-square rounded-3xl overflow-hidden">
+              <div className="relative w-3/4 mx-auto aspect-square rounded-3xl overflow-hidden">
                 <Image src={IMAGES[key]} alt={t(`items.${key}.category` as any)} fill className="object-cover" />
               </div>
-              <h3 className="font-bold text-[#1F4C34] text-base">
+              <h3 className="font-bold text-[#1F4C34] text-base text-center">
                 {t(`items.${key}.category` as any)}
               </h3>
               <p className="text-sm text-[#1F4C34]/70 leading-relaxed">

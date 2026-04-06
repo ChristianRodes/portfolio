@@ -153,7 +153,7 @@
     "items": {
       "0": {
         "category": "Business Intelligence",
-        "desc": "Data-driven decision making (<b>SQL, Tableau, KPIs</b>). Business metrics analysis to transform insights into <b>strategic roadmaps</b>."
+        "desc": "<b>Data-driven</b> decision making (<b>SQL, Tableau, KPIs</b>). Business metrics analysis to transform insights into <b>strategic roadmaps</b>."
       },
       "1": {
         "category": "Technical Expertise",
@@ -161,7 +161,7 @@
       },
       "2": {
         "category": "Management",
-        "desc": "Coordination of <b>multidisciplinary teams</b> and stakeholders under Agile methodologies. Clear communication between business and technical profiles."
+        "desc": "<b>Team and stakeholder coordination</b> under <b>Agile</b> methodologies. Clear communication between <b>business and tech.</b>"
       }
     }
   },
