@@ -34,13 +34,13 @@ export default function ProjectCard({
       className="flex flex-col sm:flex-row gap-6 border-t border-[#E2DCC8] py-8 first:border-t-0 first:pt-0 cursor-pointer group"
     >
       {/* Thumbnail */}
-      <div className="relative w-full sm:w-44 h-28 shrink-0 rounded-xl bg-[#F0EDD8] border border-[#E2DCC8]">
+      <div className="relative w-full aspect-video sm:w-44 sm:aspect-auto sm:h-28 shrink-0 rounded-xl bg-[#F0EDD8] border border-[#E2DCC8]">
         {image ? (
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover transition-all duration-500 ease-out group-hover:scale-[1.05] drop-shadow-sm group-hover:drop-shadow-md"
+            className="object-contain sm:object-cover transition-all duration-500 ease-out group-hover:scale-[1.05] drop-shadow-sm group-hover:drop-shadow-md"
           />
         ) : (
           <span className="text-xs text-[#1F4C34]/40 font-medium flex items-center justify-center h-full">{title}</span>
