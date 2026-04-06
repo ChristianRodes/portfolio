@@ -31,14 +31,14 @@ export default function SkillsSection() {
               transition={{ duration: 0.45, ease: spring, delay: index * 0.07 }}
               className="flex flex-col gap-4"
             >
-              <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
+              <div className="relative w-full aspect-square rounded-3xl overflow-hidden">
                 <Image src={IMAGES[key]} alt={t(`items.${key}.category` as any)} fill className="object-cover" />
               </div>
               <h3 className="font-bold text-[#1F4C34] text-base">
                 {t(`items.${key}.category` as any)}
               </h3>
               <p className="text-sm text-[#1F4C34]/70 leading-relaxed">
-                {t(`items.${key}.desc` as any)}
+                {t.rich(`items.${key}.desc` as any, { b: (chunks) => <strong className="font-bold text-[#1F4C34]">{chunks}</strong> })}
               </p>
             </motion.div>
           ))}

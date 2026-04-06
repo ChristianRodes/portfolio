@@ -47,7 +47,7 @@
         "period": "Oct 2025 — Present",
         "b0": "Lead the creation of digital products from discovery through technical launch.",
         "b1": "Combine high-fidelity Figma design with Next.js & TypeScript frontend development.",
-        "b2": "Build own prototypes to ensure a frictionless product vision-to-code transition, delivering an optimised and technically scalable user experience."
+        "b2": "Build own prototypes to ensure a frictionless product vision-to-code transition."
       },
       "1": {
         "company": "Auto1 Group",
@@ -63,7 +63,7 @@
         "period": "Oct 2020 — May 2023",
         "b0": "Part of the international expansion team as functional bridge between sales teams and IT.",
         "b1": "Facilitated adoption of Salesforce and POS systems, translating store needs into technical requirements for developers.",
-        "b2": "Ensured technology was an enabler rather than a barrier during the company's growth into new markets."
+        "b2": "Ensured technology was an enabler rather than a barrier during the company''s growth into new markets."
       }
     }
   },
@@ -85,6 +85,7 @@
     "tag2": "Frontend Dev",
     "image-cta": "Click to see project",
     "delivery-title": "End-to-end",
+    "delivery-intro": "Collaborating with <b>ProductPartner</b>, I led an <b>iterative enhancement</b> of their digital platform. My focus was on scaling the existing <b>design system</b> to introduce new <b>service pages</b> and a <b>high-impact visual identity</b>, ensuring the site effectively showcased recent projects to boost <b>SEO</b> and <b>user engagement</b>.",
     "delivery-1-title": "Creative Direction",
     "delivery-1-b1": "Defined the visual language and layout system for the services section.",
     "delivery-1-b2": "Designed high-fidelity prototypes in Figma before moving to code.",
@@ -152,15 +153,15 @@
     "items": {
       "0": {
         "category": "Business Intelligence",
-        "desc": "Data-driven decision making (SQL, Tableau, KPIs). Business metrics analysis to transform insights into strategic roadmaps."
+        "desc": "Data-driven decision making (<b>SQL, Tableau, KPIs</b>). Business metrics analysis to transform insights into <b>strategic roadmaps</b>."
       },
       "1": {
         "category": "Technical Expertise",
-        "desc": "Building digital products with Next.js, TypeScript and Tailwind CSS. AI integration to accelerate development and innovation."
+        "desc": "Building digital products with <b>Next.js, TypeScript and Tailwind CSS</b>. AI integration to accelerate development and innovation."
       },
       "2": {
         "category": "Management",
-        "desc": "Coordination of multidisciplinary teams and stakeholders under Agile methodologies. Clear communication between business and technical profiles."
+        "desc": "Coordination of <b>multidisciplinary teams</b> and stakeholders under Agile methodologies. Clear communication between business and technical profiles."
       }
     }
   },

@@ -65,8 +65,8 @@ function DeliveryRow({
       <h3 className="text-2xl md:text-3xl font-bold text-[#1F4C34] mb-6 leading-tight">{title}</h3>
       <ul className="space-y-4">
         {bullets.map((b, i) => (
-          <li key={i} className="flex items-start gap-3 text-base text-[#1F4C34]/70 leading-relaxed">
-            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#1F4C34]/50 shrink-0" />
+          <li key={i} className="flex items-start gap-3 text-base text-[#1F4C34] leading-relaxed">
+            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#1F4C34] shrink-0" />
             {b}
           </li>
         ))}
@@ -166,6 +166,10 @@ export default function FeaturedProjectSection() {
               </svg>
             </h2>
           </motion.div>
+
+          <p className="text-justify text-base text-[#1F4C34] leading-relaxed max-w-2xl mx-auto mb-16 md:mb-20">
+            {t.rich('delivery-intro', { b: (chunks) => <strong className="font-bold">{chunks}</strong> })}
+          </p>
 
           <div className="flex flex-col gap-16 md:gap-24">
             <DeliveryRow
