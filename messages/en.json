@@ -2,9 +2,9 @@
   "Hero": {
     "greeting": "Hey! 👋",
     "name-short": "I'm Chris",
-    "headline-1": "Digital",
-    "headline-2": "'Builder'",
-    "description": "I Analyse Data. Build Products. Optimise Processes.",
+    "headline-1": "Product",
+    "headline-2": "Builder",
+    "description": "I transform ideas into digital products that solve real world problems.",
     "cta": "Get in touch",
     "badge": "Available · 2025",
     "photo-alt": "Christian Rodes"
@@ -32,7 +32,7 @@
 
   "About": {
     "label": "About Me",
-    "p1": "I see myself as a <b>Digital ''Builder''</b> operating at the intersection of <b>project management</b>, <b>data analysis</b> and <b>software development</b>. My focus is on optimising processes so that technology works for the business, not the other way around.",
+    "p1": "I focus on solving real-world business challenges at the intersection of product management, data, and code. My goal isn't just to build software, but to create solutions that eliminate friction and drive measurable growth.",
     "p2": "",
     "p3": ""
   },
@@ -45,19 +45,25 @@
         "company": "ProductPartner",
         "role": "Junior Product Manager",
         "period": "Oct 2025 — Present",
-        "impact": "I lead the creation of digital products from the discovery phase through to technical launch. My role combines high-fidelity interface design in Figma with real frontend development using Next.js and TypeScript. By coding my own prototypes, I ensure a frictionless transition between product vision and final code, delivering an optimised and technically scalable user experience."
+        "b0": "Lead the creation of digital products from discovery through technical launch.",
+        "b1": "Combine high-fidelity Figma design with Next.js & TypeScript frontend development.",
+        "b2": "Build own prototypes to ensure a frictionless product vision-to-code transition, delivering an optimised and technically scalable user experience."
       },
       "1": {
         "company": "Auto1 Group",
         "role": "Project Manager - B2B Operations",
         "period": "May 2023 — May 2025",
-        "impact": "I managed critical operations for the European market at one of the largest B2B e-commerce platforms in the automotive sector. My focus was on process optimisation through large-scale data analysis with SQL, enabling me to identify bottlenecks and coordinate international teams to improve logistical and commercial efficiency. I acted as the analytical link that translated operational performance into strategic business decisions."
+        "b0": "Managed critical operations for the European market at one of the largest B2B automotive e-commerce platforms.",
+        "b1": "Process optimisation through large-scale SQL data analysis, identifying bottlenecks across logistical and commercial workflows.",
+        "b2": "Coordinated international teams and translated operational performance into strategic business decisions."
       },
       "2": {
         "company": "Sprinter (JD Group)",
         "role": "L&D Specialist & Process Bridge",
         "period": "Oct 2020 — May 2023",
-        "impact": "I was part of the international expansion team, acting as the functional bridge between sales teams and the IT department. I facilitated the adoption of key tools such as Salesforce and POS systems, translating real day-to-day store needs into technical requirements for developers. My work ensured that technology was an enabler rather than a barrier during the company's growth into new markets."
+        "b0": "Part of the international expansion team as functional bridge between sales teams and IT.",
+        "b1": "Facilitated adoption of Salesforce and POS systems, translating store needs into technical requirements for developers.",
+        "b2": "Ensured technology was an enabler rather than a barrier during the company's growth into new markets."
       }
     }
   },
@@ -77,6 +83,7 @@
     "desc": "Creative direction and development of the services and case studies sections for the site.",
     "tag1": "Creative Direction",
     "tag2": "Frontend Dev",
+    "image-cta": "Click to see project",
     "delivery-title": "End-to-end",
     "delivery-1-title": "Creative Direction",
     "delivery-1-b1": "Defined the visual language and layout system for the services section.",
@@ -144,19 +151,15 @@
     "label": "Skills",
     "items": {
       "0": {
-        "category": "Product Operations.",
-        "desc": "Design and optimisation of operational workflows through automation. Product lifecycle management with a focus on process efficiency."
-      },
-      "1": {
-        "category": "Data Strategy & BI.",
+        "category": "Business Intelligence",
         "desc": "Data-driven decision making (SQL, Tableau, KPIs). Business metrics analysis to transform insights into strategic roadmaps."
       },
-      "2": {
-        "category": "Technical Development.",
+      "1": {
+        "category": "Technical Expertise",
         "desc": "Building digital products with Next.js, TypeScript and Tailwind CSS. AI integration to accelerate development and innovation."
       },
-      "3": {
-        "category": "Agile Leadership.",
+      "2": {
+        "category": "Management",
         "desc": "Coordination of multidisciplinary teams and stakeholders under Agile methodologies. Clear communication between business and technical profiles."
       }
     }
@@ -247,6 +250,7 @@
 
   "Footer": {
     "cv-button": "Download PDF Resume",
+    "back-button": "Back",
     "location-label": "Location",
     "location-value": "Elche, Spain",
     "contact-label": "Contact Details",

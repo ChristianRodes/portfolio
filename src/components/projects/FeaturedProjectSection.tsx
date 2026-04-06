@@ -116,19 +116,24 @@ export default function FeaturedProjectSection() {
               </span>
             </div>
           </div>
-          <a
-            href="https://www.productpartner.io/en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block relative w-full aspect-video transition-transform duration-300 ease-out hover:scale-[1.04]"
-          >
-            <Image
-              src="/img/global/pp_computer.svg"
-              alt="ProductPartner Web"
-              fill
-              className="object-contain drop-shadow-md"
-            />
-          </a>
+          <div>
+            <a
+              href="https://www.productpartner.io/en/services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block relative w-full aspect-[4/3] rounded-2xl overflow-hidden transition-transform duration-300 ease-out hover:scale-[1.04]"
+            >
+              <Image
+                src="/img/global/pp_content.webp"
+                alt="ProductPartner Web"
+                fill
+                className="object-cover object-top"
+              />
+            </a>
+            <p className="mt-3 text-xs text-white/40 underline underline-offset-2 text-center">
+              {t('image-cta')}
+            </p>
+          </div>
         </div>
       </div>
 
@@ -240,7 +245,7 @@ export default function FeaturedProjectSection() {
       </div>
 
       {/* ── Footer ── */}
-      <FooterSection />
+      <FooterSection backButton />
     </>
   );
 }

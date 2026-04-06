@@ -40,7 +40,7 @@ export default function ProjectCard({
             src={image}
             alt={title}
             fill
-            className="object-contain transition-all duration-500 ease-out group-hover:scale-[1.12] group-hover:-translate-y-2 drop-shadow-sm group-hover:drop-shadow-md"
+            className="object-cover transition-all duration-500 ease-out group-hover:scale-[1.05] drop-shadow-sm group-hover:drop-shadow-md"
           />
         ) : (
           <span className="text-xs text-[#1F4C34]/40 font-medium flex items-center justify-center h-full">{title}</span>

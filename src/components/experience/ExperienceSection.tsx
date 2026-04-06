@@ -22,7 +22,7 @@ export default function ExperienceSection() {
               company={t(`items.${key}.company` as any)}
               role={t(`items.${key}.role` as any)}
               period={t(`items.${key}.period` as any)}
-              impact={t(`items.${key}.impact` as any)}
+              bullets={(['b0', 'b1', 'b2'] as const).map(b => t(`items.${key}.${b}` as any)).filter(Boolean)}
               index={index}
               inView={inView}
             />

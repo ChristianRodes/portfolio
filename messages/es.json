@@ -2,9 +2,9 @@
   "Hero": {
     "greeting": "Hola! 👋",
     "name-short": "Soy Chris",
-    "headline-1": "'Builder'",
-    "headline-2": "digital",
-    "description": "Analizo Datos. Construyo Productos. Optimizo Procesos.",
+    "headline-1": "Product",
+    "headline-2": "Builder",
+    "description": "Transformo ideas en productos digitales que resuelven problemas del mundo real.",
     "cta": "Contactar",
     "badge": "Disponible · 2025",
     "photo-alt": "Christian Rodes"
@@ -32,7 +32,7 @@
 
   "About": {
     "label": "Sobre Mí",
-    "p1": "Me considero un <b>''Builder'' Digital</b> que opera en la intersección de la <b>gestión de proyectos</b>, el <b>análisis de datos</b> y el <b>desarrollo de software</b>. Mi foco está en optimizar procesos para que la tecnología trabaje a favor del negocio, no al revés.",
+    "p1": "Me enfoco en resolver retos de negocio reales en la intersección entre la gestión de producto, los datos y el código. Mi objetivo no es solo construir software, sino crear soluciones que eliminen fricciones e impulsen un crecimiento medible.",
     "p2": "",
     "p3": ""
   },
@@ -45,19 +45,25 @@
         "company": "ProductPartner",
         "role": "Junior Product Manager",
         "period": "Oct 2025 — Actualidad",
-        "impact": "Lidero la creación de productos digitales desde la fase de descubrimiento hasta su lanzamiento técnico. Mi rol combina el diseño de interfaces de alta fidelidad en Figma con el desarrollo frontend real utilizando Next.js y TypeScript. Al programar mis propios prototipos, aseguro una transición sin fricciones entre la visión de producto y el código final, garantizando una experiencia de usuario optimizada y técnicamente escalable."
+        "b0": "Lidero la creación de productos digitales desde la fase de descubrimiento hasta su lanzamiento técnico.",
+        "b1": "Combino el diseño de interfaces de alta fidelidad en Figma con el desarrollo frontend en Next.js y TypeScript.",
+        "b2": "Programo mis propios prototipos para garantizar una transición sin fricciones entre la visión de producto y el código final."
       },
       "1": {
         "company": "Auto1 Group",
         "role": "Project Manager - B2B Operations",
         "period": "May 2023 — May 2025",
-        "impact": "Gestioné operativas críticas para el mercado europeo en uno de los mayores e-commerce B2B del sector automotriz. Mi enfoque se centró en la optimización de procesos mediante el análisis masivo de datos con SQL, permitiéndome identificar cuellos de botella y coordinar equipos internacionales para mejorar la eficiencia logística y comercial. Actué como el nexo analítico que traducía el rendimiento operativo en decisiones estratégicas de negocio."
+        "b0": "Gestioné operativas críticas para el mercado europeo en uno de los mayores e-commerce B2B del sector automotriz.",
+        "b1": "Optimización de procesos mediante análisis masivo de datos con SQL para identificar cuellos de botella.",
+        "b2": "Coordiné equipos internacionales y traduje el rendimiento operativo en decisiones estratégicas de negocio."
       },
       "2": {
         "company": "Sprinter (JD Group)",
         "role": "L&D Specialist & Process Bridge",
         "period": "Oct 2020 — May 2023",
-        "impact": "Formé parte del equipo de expansión internacional, actuando como el puente funcional entre los equipos de ventas y el departamento de IT. Facilité la adopción de herramientas clave como Salesforce y sistemas POS, traduciendo las necesidades reales del día a día en tienda a requerimientos técnicos para los desarrolladores. Mi trabajo aseguró que la tecnología fuera un habilitador y no una barrera durante el crecimiento de la compañía en nuevos mercados."
+        "b0": "Formé parte del equipo de expansión internacional como puente funcional entre ventas y el departamento de IT.",
+        "b1": "Facilité la adopción de Salesforce y sistemas POS, traduciendo necesidades reales a requerimientos técnicos.",
+        "b2": "Aseguré que la tecnología fuera un habilitador y no una barrera durante el crecimiento en nuevos mercados."
       }
     }
   },
@@ -77,6 +83,7 @@
     "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito para el sitio.",
     "tag1": "Dirección Creativa",
     "tag2": "Desarrollo Web",
+    "image-cta": "Click para ver el proyecto",
     "delivery-title": "End-to-end",
     "delivery-1-title": "Dirección Creativa",
     "delivery-1-b1": "Definí el lenguaje visual y el sistema de layout para la sección de servicios.",
@@ -144,19 +151,15 @@
     "label": "Competencias",
     "items": {
       "0": {
-        "category": "Dirección de Operaciones.",
-        "desc": "Diseño y optimización de flujos operativos mediante automatización. Gestión del ciclo de vida del producto con foco en la eficiencia de procesos."
-      },
-      "1": {
-        "category": "Inteligencia de Negocio.",
+        "category": "Inteligencia de Negocio",
         "desc": "Toma de decisiones basada en datos (SQL, Tableau, KPIs). Análisis de métricas de negocio para transformar insights en roadmaps estratégicos."
       },
-      "2": {
-        "category": "Desarrollo Web.",
+      "1": {
+        "category": "Desarrollo",
         "desc": "Construcción de productos digitales con Next.js, TypeScript y Tailwind CSS. Integración de IA para acelerar el desarrollo y la innovación."
       },
-      "3": {
-        "category": "Gestión Ágil.",
+      "2": {
+        "category": "Gestión",
         "desc": "Coordinación de equipos multidisciplinares y stakeholders bajo metodologías Agile. Comunicación clara entre negocio y perfiles técnicos."
       }
     }
@@ -247,6 +250,7 @@
 
   "Footer": {
     "cv-button": "Descargar CV en PDF",
+    "back-button": "Volver",
     "location-label": "Ubicación",
     "location-value": "Elche, España",
     "contact-label": "Contacto",

@@ -1,14 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const spring = [0.22, 1, 0.36, 1] as const;
 
 export default function HeroSection() {
 	const t = useTranslations('Hero');
-	const locale = useLocale();
 
 	return (
 		<section className="sticky top-0 z-0 min-h-[100svh] bg-[#1F4C34] flex items-center">
@@ -63,8 +62,8 @@ export default function HeroSection() {
 							transition={{ duration: 0.85, ease: spring, delay: 0.18 }}
 							className="font-bold tracking-tighter leading-[0.88] text-[clamp(3rem,10vw,6.5rem)]"
 						>
-							<span className={`block text-white mb-4 ${locale === 'en' ? 'font-bold' : 'italic font-normal'}`}>{t('headline-1')}</span>
-							<span className={`block text-white ${locale === 'en' ? 'italic font-normal' : 'font-bold'}`}>{t('headline-2')}</span>
+							<span className="block text-white mb-4 font-bold">{t('headline-1')}</span>
+							<span className="block text-white italic font-normal">{t('headline-2')}</span>
 						</motion.h1>
 
 						{/* Description */}
@@ -85,7 +84,7 @@ export default function HeroSection() {
 							className="flex justify-center"
 						>
 							<a
-								href="#contact"
+								href="mailto:christianrodesvidal@gmail.com"
 								className="inline-flex items-center gap-2 bg-white text-[#1F4C34] text-sm font-semibold px-7 py-3.5 rounded-full hover:bg-white/90 transition-colors"
 							>
 								{t('cta')}
