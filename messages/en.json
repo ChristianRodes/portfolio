@@ -87,7 +87,7 @@
     "delivery-title": "End-to-end",
     "delivery-intro": "Collaborating with <b>ProductPartner</b>, I led an <b>iterative enhancement</b> of their digital platform. My focus was on scaling the existing <b>design system</b> to introduce new <b>service pages</b> and a <b>high-impact visual identity</b>, ensuring the site effectively showcased recent projects to boost <b>SEO</b> and <b>user engagement</b>.",
     "delivery-1-title": "Creative Direction",
-    "delivery-1-b1": "Defined the visual language and layout system for the services section.",
+    "delivery-1-b1": "Defined the responsive visual language and layout system for the services section.",
     "delivery-1-b2": "Designed high-fidelity prototypes in Figma before moving to code.",
     "delivery-1-b3": "Ensured brand consistency across all pages and breakpoints.",
     "delivery-2-title": "Agile Development",
@@ -153,15 +153,18 @@
     "items": {
       "0": {
         "category": "Business Intelligence",
-        "desc": "<b>Data-driven</b> decision making (<b>SQL, Tableau, KPIs</b>). Business metrics analysis to transform insights into <b>strategic roadmaps</b>."
+        "b0": "Data-driven decision making with SQL, Tableau and KPIs.",
+        "b1": "Transform business metrics into strategic roadmaps."
       },
       "1": {
         "category": "Technical Expertise",
-        "desc": "Building digital products with <b>Next.js, TypeScript and Tailwind CSS</b>. AI integration to accelerate development and innovation."
+        "b0": "Building digital products with Next.js, TypeScript and Tailwind CSS.",
+        "b1": "AI integration to accelerate development and innovation."
       },
       "2": {
-        "category": "Management",
-        "desc": "<b>Team and stakeholder coordination</b> under <b>Agile</b> methodologies. Clear communication between <b>business and tech.</b>"
+        "category": "Project Management",
+        "b0": "Team and stakeholder coordination under Agile methodologies.",
+        "b1": "Clear communication between business and tech."
       }
     }
   },

@@ -8,6 +8,7 @@ import SectionLabel from '@/components/ui/section-label';
 
 const spring = [0.22, 1, 0.36, 1] as const;
 const KEYS = ['0', '1', '2'] as const;
+const BULLET_KEYS = ['b0', 'b1'] as const;
 const IMAGES: Record<string, string> = {
   '0': '/img/skills/bi.webp',
   '1': '/img/skills/dev.webp',
@@ -37,9 +38,17 @@ export default function SkillsSection() {
               <h3 className="font-bold text-[#1F4C34] text-base text-center">
                 {t(`items.${key}.category` as any)}
               </h3>
-              <p className="text-sm text-[#1F4C34]/70 leading-relaxed">
-                {t.rich(`items.${key}.desc` as any, { b: (chunks) => <strong className="font-bold text-[#1F4C34]">{chunks}</strong> })}
-              </p>
+              <ul className="space-y-2">
+                {BULLET_KEYS.map((bk) => (
+                  <li key={bk} className="flex items-start gap-2.5 text-sm text-[#1F4C34]/70 leading-relaxed">
+                    <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 shrink-0 mt-0.5 text-[#1F4C34]" aria-hidden="true">
+                      <circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.5" opacity="0.3" />
+                      <path d="M5 8l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    {t(`items.${key}.${bk}` as any)}
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>

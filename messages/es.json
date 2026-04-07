@@ -72,22 +72,22 @@
     "label": "Proyecto Destacado",
     "title": "ProductPartner Web",
     "about-label": "Sobre el Proyecto",
-    "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito.",
+    "desc": "Dirección creativa y desarrollo de las secciones de <b>servicios y casos de éxito.</b>",
     "tag1": "Dirección Creativa",
     "tag2": "Frontend Dev"
   },
 
   "CaseStudyPP": {
-    "label": "Case Study",
+    "label": "Caso de éxito",
     "title": "ProductPartner",
     "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito para el sitio.",
     "tag1": "Dirección Creativa",
     "tag2": "Desarrollo Web",
-    "image-cta": "Click para ver el proyecto",
+    "image-cta": "Click para ver",
     "delivery-title": "End-to-end",
     "delivery-intro": "En colaboración con <b>ProductPartner</b>, lideré una <b>mejora iterativa</b> de su plataforma digital. Mi enfoque fue escalar el <b>sistema de diseño</b> existente para introducir nuevas <b>páginas de servicios</b> y una <b>identidad visual de alto impacto</b>, asegurando que la web mostrara eficazmente los proyectos recientes para potenciar el <b>SEO</b> y el <b>engagement</b> de los usuarios.",
     "delivery-1-title": "Dirección Creativa",
-    "delivery-1-b1": "Definí el lenguaje visual y el sistema de layout para la sección de servicios.",
+    "delivery-1-b1": "Definí el lenguaje visual responsive y el sistema de layout para la sección de servicios.",
     "delivery-1-b2": "Diseñé prototipos de alta fidelidad en Figma antes de pasar al código.",
     "delivery-1-b3": "Aseguré la coherencia de marca en todas las páginas y breakpoints.",
     "delivery-2-title": "Desarrollo Ágil",
@@ -153,15 +153,18 @@
     "items": {
       "0": {
         "category": "Inteligencia de Negocio",
-        "desc": "Toma de decisiones basada en datos (<b>SQL, Tableau, KPIs</b>). Análisis de métricas para transformar insights en <b>roadmaps estratégicos</b>."
+        "b0": "Toma de decisiones basada en datos con SQL, Tableau y KPIs.",
+        "b1": "Análisis de métricas para transformar insights en roadmaps estratégicos."
       },
       "1": {
-        "category": "Desarrollo",
-        "desc": "Construcción de productos digitales con <b>Next.js, TypeScript y Tailwind CSS</b>. Integración de IA para acelerar el desarrollo y la innovación."
+        "category": "Desarrollo Web",
+        "b0": "Construcción de productos digitales con Next.js, TypeScript y Tailwind CSS.",
+        "b1": "Integración de IA para acelerar el desarrollo y la innovación."
       },
       "2": {
-        "category": "Gestión",
-        "desc": "<b>Coordinación</b> de equipos y stakeholders bajo metodologías <b>Agile</b>. Comunicación clara entre <b>negocio y tecnología.</b>"
+        "category": "Gestión de Proyectos",
+        "b0": "Coordinación de equipos y stakeholders bajo metodologías ágiles.",
+        "b1": "Comunicación clara entre negocio y tecnología."
       }
     }
   },

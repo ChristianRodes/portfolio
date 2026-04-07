@@ -129,10 +129,10 @@ export default function FeaturedProjectSection() {
                 fill
                 className="object-cover object-top"
               />
+              <span className="absolute bottom-2 left-0 right-0 text-center text-xs text-white/50">
+                {t('image-cta')}
+              </span>
             </a>
-            <p className="mt-3 text-xs text-white/40 underline underline-offset-2 text-center">
-              {t('image-cta')}
-            </p>
           </div>
         </div>
       </div>
