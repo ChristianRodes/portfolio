@@ -6,6 +6,11 @@ import SectionLabel from '@/components/ui/section-label';
 import ExperienceItem from './ExperienceItem';
 
 const KEYS = ['0', '1', '2'] as const;
+const LOGOS: Record<string, string> = {
+  '0': '/img/logos/pp.webp',
+  '1': '/img/logos/a1.webp',
+  '2': '/img/logos/sp.webp',
+};
 
 export default function ExperienceSection() {
   const t = useTranslations('Experience');
@@ -23,6 +28,7 @@ export default function ExperienceSection() {
               role={t(`items.${key}.role` as any)}
               period={t(`items.${key}.period` as any)}
               bullets={(['b0', 'b1', 'b2'] as const).map(b => t(`items.${key}.${b}` as any)).filter(Boolean)}
+              logo={LOGOS[key]}
               index={index}
               inView={inView}
             />

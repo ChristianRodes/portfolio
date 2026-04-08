@@ -40,7 +40,7 @@ export default function SkillsSection() {
               </h3>
               <ul className="space-y-2">
                 {BULLET_KEYS.map((bk) => (
-                  <li key={bk} className="flex items-start gap-2.5 text-sm text-[#1F4C34]/70 leading-relaxed">
+                  <li key={bk} className="flex items-start gap-2.5 text-sm text-[#1F4C34]/90 leading-relaxed">
                     <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 shrink-0 mt-0.5 text-[#1F4C34]" aria-hidden="true">
                       <circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.5" opacity="0.3" />
                       <path d="M5 8l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
