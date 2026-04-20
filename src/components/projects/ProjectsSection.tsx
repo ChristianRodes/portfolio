@@ -20,6 +20,7 @@ export default function ProjectsSection() {
             metric={t('featured.metric')}
             image="/img/global/pppc.webp"
             href="/projects/productpartner"
+            cta={t('featured.cta')}
             index={0}
             inView={inView}
           />

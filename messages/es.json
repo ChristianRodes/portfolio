@@ -79,11 +79,11 @@
 
   "CaseStudyPP": {
     "label": "Caso de éxito",
-    "title": "ProductPartner",
+    "title": "ProductPartner.io",
     "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito para el sitio.",
     "tag1": "Dirección Creativa",
     "tag2": "Desarrollo Web",
-    "image-cta": "Click para ver",
+    "image-cta": "Click para visitar ProductPartner",
     "delivery-title": "End-to-end",
     "delivery-intro": "En colaboración con <b>ProductPartner</b>, lideré una <b>mejora iterativa</b> de su plataforma digital. Mi enfoque fue escalar el <b>sistema de diseño</b> existente para introducir nuevas <b>páginas de servicios</b> y una <b>identidad visual de alto impacto</b>, asegurando que la web mostrara eficazmente los proyectos recientes para potenciar el <b>SEO</b> y el <b>engagement</b> de los usuarios.",
     "delivery-1-title": "Dirección Creativa",
@@ -104,9 +104,10 @@
     "label": "Proyectos Destacados",
     "cta": "Ver más proyectos",
     "featured": {
-      "title": "ProductPartner",
+      "title": "ProductPartner.io",
       "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito.",
-      "metric": "Proyecto Live"
+      "metric": "Proyecto Live",
+      "cta": "Click para ver proyecto"
     },
     "items": {
       "0": {

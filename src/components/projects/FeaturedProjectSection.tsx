@@ -108,15 +108,15 @@ export default function FeaturedProjectSection() {
               {t('desc')}
             </p>
             <div className="flex gap-2 flex-wrap">
-              <span className="text-xs font-medium text-white/70 border border-white/20 px-3 py-1.5 rounded-full">
+              <span className="text-xs font-medium px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: '#D27D56' }}>
                 {t('tag1')}
               </span>
-              <span className="text-xs font-medium text-white/70 border border-white/20 px-3 py-1.5 rounded-full">
+              <span className="text-xs font-medium px-3 py-1.5 rounded-full text-[#1F4C34]" style={{ backgroundColor: '#F0EAD6' }}>
                 {t('tag2')}
               </span>
             </div>
           </div>
-          <div>
+          <div className="flex flex-col gap-3">
             <a
               href="https://www.productpartner.io/en/services"
               target="_blank"
@@ -129,9 +129,17 @@ export default function FeaturedProjectSection() {
                 fill
                 className="object-cover object-top"
               />
-              <span className="absolute bottom-2 left-0 right-0 text-center text-xs text-white/50">
-                {t('image-cta')}
-              </span>
+            </a>
+            <a
+              href="https://www.productpartner.io/en/services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex self-center items-center gap-2 rounded-xl border border-white/20 text-white/80 text-sm py-2.5 px-4 hover:bg-white/10 transition-colors duration-200"
+            >
+              {t('image-cta')}
+              <svg viewBox="0 0 16 16" fill="none" className="w-3.5 h-3.5" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </a>
           </div>
         </div>

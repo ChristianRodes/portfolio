@@ -79,11 +79,11 @@
 
   "CaseStudyPP": {
     "label": "Case Study",
-    "title": "ProductPartner",
+    "title": "ProductPartner.io",
     "desc": "Creative direction and development of the services and case studies sections for the site.",
     "tag1": "Creative Direction",
     "tag2": "Frontend Dev",
-    "image-cta": "Click to see project",
+    "image-cta": "Click to visit ProductPartner",
     "delivery-title": "End-to-end",
     "delivery-intro": "Collaborating with <b>ProductPartner</b>, I led an <b>iterative enhancement</b> of their digital platform. My focus was on scaling the existing <b>design system</b> to introduce new <b>service pages</b> and a <b>high-impact visual identity</b>, ensuring the site effectively showcased recent projects to boost <b>SEO</b> and <b>user engagement</b>.",
     "delivery-1-title": "Creative Direction",
@@ -104,9 +104,10 @@
     "label": "Featured Projects",
     "cta": "View more projects",
     "featured": {
-      "title": "ProductPartner",
+      "title": "ProductPartner.io",
       "desc": "Creative direction and development of the services and case studies sections.",
-      "metric": "Live Project"
+      "metric": "Live Project",
+      "cta": "Click to see project"
     },
     "items": {
       "0": {
