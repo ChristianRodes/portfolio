@@ -32,7 +32,7 @@ export default function ExperienceItem({
       className="border-t border-[#E2DCC8] py-8 first:border-t-0 first:pt-0"
     >
       <div className="flex gap-4 items-start mb-4">
-        <Image src={logo} alt={company} width={48} height={48} className="shrink-0 w-16 h-16 sm:w-12 sm:h-12 rounded-xl object-contain" />
+        <Image src={logo} alt={company} width={48} height={48} className="shrink-0 w-16 h-16 sm:w-12 sm:h-12 rounded object-contain" />
         <div className="flex-1 min-w-0">
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
             <h3 className="font-bold text-[#1F4C34] text-base">{role}</h3>

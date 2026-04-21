@@ -37,7 +37,7 @@ export default function EducationSection() {
                   alt={t(`items.${key}.school` as any)}
                   width={48}
                   height={48}
-                  className="shrink-0 w-16 h-16 sm:w-12 sm:h-12 rounded-xl object-contain"
+                  className="shrink-0 w-16 h-16 sm:w-12 sm:h-12 rounded object-contain"
                 />
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-col sm:flex-row sm:justify-between gap-1 mb-1">
