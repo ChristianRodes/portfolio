@@ -100,6 +100,30 @@
     "quote-role": "CEO, ProductPartner"
   },
 
+  "CaseStudyGC": {
+    "label": "Case Study",
+    "title": "GolfClass",
+    "desc": "Full-stack platform connecting golf teachers and students, built as a Final Degree Project.",
+    "tag1": "Full-Stack Dev",
+    "tag2": "UX/UI Design",
+    "image-cta": "Click to visit GolfClass",
+    "delivery-title": "End-to-end",
+    "delivery-intro": "GolfClass was born from identifying a real gap in the market: <b>no modern, effective platform existed</b> to connect golf teachers with students. I designed the product around <b>three distinct user profiles</b> — student, teacher and administrator — each with their own tailored features and permissions.",
+    "delivery-1-title": "Features",
+    "delivery-1-b1": "Real-time chat between teachers and students.",
+    "delivery-1-b2": "Class booking calendar with availability management.",
+    "delivery-1-b3": "Teacher and student profile management.",
+    "delivery-1-b4": "Course search and filtering by location and level.",
+    "delivery-2-title": "CRUD & Admin",
+    "delivery-2-b1": "Full admin panel to manage users, courses and bookings.",
+    "delivery-2-b2": "Create, edit and delete operations across all entities.",
+    "delivery-2-b3": "Role-based access control: student, teacher and admin.",
+    "stack-title": "Tech Stack",
+    "quote": "\"An impeccable project that combines astute business vision with the effective development of a complete product.\"",
+    "quote-author": "José Andrés Torres López",
+    "quote-role": "Head of Studies, Severo Ochoa"
+  },
+
   "Projects": {
     "label": "Case Studies",
     "cta": "View more projects",
@@ -107,6 +131,11 @@
       "title": "ProductPartner.io",
       "desc": "Creative direction and development of the services and case studies sections.",
       "metric": "Live Project",
+      "cta": "See project"
+    },
+    "golfclass": {
+      "title": "GolfClass",
+      "desc": "Full-stack platform connecting golf teachers and students, built as a Final Degree Project.",
       "cta": "See project"
     },
     "items": {

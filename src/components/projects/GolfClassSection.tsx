@@ -1,0 +1,237 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import FooterSection from '@/components/footer/FooterSection';
+
+const spring = [0.22, 1, 0.36, 1] as const;
+
+const TECH_STACK = [
+  { name: 'PHP',       src: '/img/logos/php.png' },
+  { name: 'Bootstrap', src: '/img/logos/bootstrap.svg' },
+  { name: 'GitHub',    src: '/img/logos/github-icon.svg' },
+  { name: 'InfinityFree', src: '/img/logos/if.png' },
+];
+
+const MARQUEE_ITEMS = [...TECH_STACK, ...TECH_STACK, ...TECH_STACK];
+
+function TechCard({ name, src }: { name: string; src: string }) {
+  return (
+    <div className="shrink-0 w-12 h-12 relative">
+      <Image src={src} alt={name} fill className="object-contain" />
+    </div>
+  );
+}
+
+function DeliveryRow({
+  title,
+  bullets,
+  imageLeft,
+  imageSrc,
+}: {
+  title: string;
+  bullets: string[];
+  imageLeft: boolean;
+  imageSrc: string;
+}) {
+  const imgEl = (
+    <motion.div
+      initial={{ opacity: 0, x: imageLeft ? -48 : 48 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.7, ease: spring }}
+      className="relative w-full min-h-[260px]"
+    >
+      <Image src={imageSrc} alt={title} fill className="object-contain" />
+    </motion.div>
+  );
+
+  const contentEl = (
+    <motion.div
+      initial={{ opacity: 0, x: imageLeft ? 48 : -48 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.7, ease: spring }}
+      className="flex flex-col justify-center h-full py-2"
+    >
+      <h3 className="text-2xl md:text-3xl font-bold text-[#1F4C34] mb-6 leading-tight">{title}</h3>
+      <ul className="space-y-4">
+        {bullets.map((b, i) => (
+          <li key={i} className="flex items-start gap-3 text-base text-[#1F4C34] leading-relaxed">
+            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#1F4C34] shrink-0" />
+            {b}
+          </li>
+        ))}
+      </ul>
+    </motion.div>
+  );
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+      <div className="md:hidden">{imgEl}</div>
+      <div className="md:hidden">{contentEl}</div>
+      {imageLeft ? (
+        <><div className="hidden md:block">{imgEl}</div><div className="hidden md:block">{contentEl}</div></>
+      ) : (
+        <><div className="hidden md:block">{contentEl}</div><div className="hidden md:block">{imgEl}</div></>
+      )}
+    </div>
+  );
+}
+
+export default function GolfClassSection() {
+  const t = useTranslations('CaseStudyGC');
+  const { ref: testimonialRef, inView: testimonialInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+  return (
+    <>
+      {/* ── Hero header ── */}
+      <div className="bg-[#1F4C34] px-6 md:px-10 py-16 md:py-24">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div>
+            <span className="block text-xs tracking-[0.25em] uppercase text-white/40 mb-4">
+              {t('label')}
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight mb-4">
+              {t('title')}
+            </h1>
+            <p className="text-white/60 text-base leading-relaxed mb-6">
+              {t('desc')}
+            </p>
+            <div className="flex gap-2 flex-wrap">
+              <span className="text-xs font-medium px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: '#4A7C59' }}>
+                {t('tag1')}
+              </span>
+              <span className="text-xs font-medium px-3 py-1.5 rounded-full text-[#1F4C34]" style={{ backgroundColor: '#F0EAD6' }}>
+                {t('tag2')}
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3">
+            <a
+              href="https://golfclass.ct.ws/index.php"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block relative w-full aspect-[4/3] rounded-2xl overflow-hidden transition-transform duration-300 ease-out hover:scale-[1.04]"
+            >
+              <Image
+                src="/img/global/gc_content.webp"
+                alt="GolfClass Web"
+                fill
+                className="object-cover object-top"
+              />
+            </a>
+            <a
+              href="https://golfclass.ct.ws/index.php"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex self-center items-center gap-2 rounded-xl border border-white/20 text-white/80 text-sm py-2.5 px-4 hover:bg-white/10 transition-colors duration-200"
+            >
+              {t('image-cta')}
+              <svg viewBox="0 0 16 16" fill="none" className="w-3.5 h-3.5" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* ── End-to-end delivery ── */}
+      <div className="bg-[#F9F7EB] py-20 md:py-28 px-6 md:px-10 border-t border-[#E2DCC8]">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: spring }}
+            className="text-center mb-16 md:mb-20"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1F4C34] inline-block relative">
+              {t('delivery-title')}
+              <svg
+                viewBox="0 0 320 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -bottom-7 left-[5%] w-[90%]"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 16 C80 6, 240 6, 316 12"
+                  stroke="#1F4C34"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  opacity="0.75"
+                />
+              </svg>
+            </h2>
+          </motion.div>
+
+          <p className="text-justify text-base text-[#1F4C34] leading-relaxed max-w-2xl mx-auto mb-16 md:mb-20">
+            {t.rich('delivery-intro', { b: (chunks) => <strong className="font-bold">{chunks}</strong> })}
+          </p>
+
+          <div className="flex flex-col gap-16 md:gap-24">
+            <DeliveryRow
+              title={t('delivery-1-title')}
+              bullets={[t('delivery-1-b1'), t('delivery-1-b2'), t('delivery-1-b3'), t('delivery-1-b4')]}
+              imageLeft={true}
+              imageSrc="/img/global/gc_features.svg"
+            />
+            <DeliveryRow
+              title={t('delivery-2-title')}
+              bullets={[t('delivery-2-b1'), t('delivery-2-b2'), t('delivery-2-b3')]}
+              imageLeft={false}
+              imageSrc="/img/global/gc_crud.svg"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* ── Tech stack carousel ── */}
+      <div className="bg-[#F9F7EB] pb-20 md:pb-28 px-6 md:px-10">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1F4C34] text-center mb-12">
+            Stack
+          </h2>
+        </div>
+        <div className="flex justify-center gap-10 max-w-5xl mx-auto">
+          {TECH_STACK.map((item) => (
+            <TechCard key={item.name} name={item.name} src={item.src} />
+          ))}
+        </div>
+      </div>
+
+      {/* ── Testimonial ── */}
+      <div className="bg-[#F9F7EB] py-20 md:py-28 px-6 md:px-10 border-t border-[#E2DCC8]">
+        <motion.div
+          ref={testimonialRef}
+          initial={{ opacity: 0, y: 20 }}
+          animate={testimonialInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: spring }}
+          className="max-w-2xl mx-auto text-center"
+        >
+          <div className="relative w-12 h-12 mx-auto mb-8 rounded-full overflow-hidden">
+            <Image src="/img/logos/so.webp" alt="IES Severo Ochoa" fill className="object-cover" />
+          </div>
+          <p className="text-[#1F4C34] text-xl md:text-2xl font-medium leading-relaxed mb-10">
+            {t('quote')}
+          </p>
+          <div className="flex flex-col items-center gap-3">
+            <div className="w-14 h-14 rounded-full bg-[#1F4C34]/10 flex items-center justify-center">
+              <span className="text-[#1F4C34] font-bold text-lg">JA</span>
+            </div>
+            <div>
+              <p className="text-[#1F4C34] font-bold text-sm">{t('quote-author')}</p>
+              <p className="text-[#1F4C34]/50 text-xs">{t('quote-role')}</p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* ── Footer ── */}
+      <FooterSection backButton />
+    </>
+  );
+}

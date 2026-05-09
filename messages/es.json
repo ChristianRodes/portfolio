@@ -100,6 +100,30 @@
     "quote-role": "CEO, ProductPartner"
   },
 
+  "CaseStudyGC": {
+    "label": "Caso de éxito",
+    "title": "GolfClass",
+    "desc": "Plataforma full-stack que conecta profesores de golf con alumnos, desarrollada como Trabajo Final de Grado.",
+    "tag1": "Desarrollo Full-Stack",
+    "tag2": "Diseño UX/UI",
+    "image-cta": "Click para visitar GolfClass",
+    "delivery-title": "End-to-end",
+    "delivery-intro": "GolfClass nació al detectar un gap real en el mercado: <b>no existía ninguna plataforma moderna y eficaz</b> que conectara profesores de golf con alumnos. Diseñé el producto pensando en <b>tres perfiles de usuario distintos</b> — alumno, profesor y administrador — cada uno con sus funciones y permisos propios.",
+    "delivery-1-title": "Funcionalidades",
+    "delivery-1-b1": "Chat en tiempo real entre profesores y alumnos.",
+    "delivery-1-b2": "Calendario de reserva de clases con gestión de disponibilidad.",
+    "delivery-1-b3": "Gestión de perfiles de profesores y alumnos.",
+    "delivery-1-b4": "Búsqueda y filtrado de cursos por ubicación y nivel.",
+    "delivery-2-title": "CRUD y Admin",
+    "delivery-2-b1": "Panel de administración completo para gestionar usuarios, cursos y reservas.",
+    "delivery-2-b2": "Operaciones de creación, edición y eliminación en todas las entidades.",
+    "delivery-2-b3": "Control de acceso por roles: alumno, profesor y administrador.",
+    "stack-title": "Stack Tecnológico",
+    "quote": "\"Un trabajo impecable que combina una astuta visión de negocio con el desarrollo eficaz de un producto completo.\"",
+    "quote-author": "José Andrés Torres López",
+    "quote-role": "Jefe de Estudios, Severo Ochoa"
+  },
+
   "Projects": {
     "label": "Casos de Éxito",
     "cta": "Ver más proyectos",
@@ -107,6 +131,11 @@
       "title": "ProductPartner.io",
       "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito.",
       "metric": "Proyecto Live",
+      "cta": "Ver proyecto"
+    },
+    "golfclass": {
+      "title": "GolfClass",
+      "desc": "Plataforma full-stack que conecta profesores de golf con alumnos, desarrollada como Trabajo Final de Grado.",
       "cta": "Ver proyecto"
     },
     "items": {
