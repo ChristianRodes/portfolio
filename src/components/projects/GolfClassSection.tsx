@@ -42,7 +42,7 @@ function DeliveryRow({
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.7, ease: spring }}
-      className="relative w-full aspect-square rounded-3xl overflow-hidden shadow-xl"
+      className="relative w-full max-w-[280px] mx-auto aspect-square rounded-3xl overflow-hidden shadow-xl"
     >
       <Image src={imageSrc} alt={title} fill className="object-cover" />
     </motion.div>
@@ -175,13 +175,13 @@ export default function GolfClassSection() {
           <div className="flex flex-col gap-16 md:gap-24">
             <DeliveryRow
               title={t('delivery-1-title')}
-              bullets={[t('delivery-1-b1'), t('delivery-1-b2'), t('delivery-1-b3')]}
+              bullets={[t('delivery-1-b1'), t('delivery-1-b2'), t('delivery-1-b3'), t('delivery-1-b4')]}
               imageLeft={true}
               imageSrc="/img/global/gc_feat.webp"
             />
             <DeliveryRow
               title={t('delivery-2-title')}
-              bullets={[t('delivery-2-b1'), t('delivery-2-b2'), t('delivery-2-b3')]}
+              bullets={[t('delivery-2-b1'), t('delivery-2-b2'), t('delivery-2-b3'), t('delivery-2-b4')]}
               imageLeft={false}
               imageSrc="/img/global/gc_admin.webp"
             />

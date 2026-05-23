@@ -118,6 +118,7 @@
     "delivery-2-b1": "Panel de administración completo para gestionar usuarios, cursos y reservas.",
     "delivery-2-b2": "Operaciones de creación, edición y eliminación en todas las entidades.",
     "delivery-2-b3": "Control de acceso por roles: alumno, profesor y administrador.",
+    "delivery-2-b4": "Dashboard con resumen de reservas por estado (pendiente, confirmada, completada), horas de mayor demanda e instructores más reservados.",
     "stack-title": "Stack Tecnológico",
     "quote": "\"Un trabajo impecable que combina una astuta visión de negocio con el desarrollo eficaz de un producto completo.\"",
     "quote-author": "José Andrés Torres López",

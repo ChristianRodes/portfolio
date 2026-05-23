@@ -118,6 +118,7 @@
     "delivery-2-b1": "Full admin panel to manage users, courses and bookings.",
     "delivery-2-b2": "Create, edit and delete operations across all entities.",
     "delivery-2-b3": "Role-based access control: student, teacher and admin.",
+    "delivery-2-b4": "Dashboard with booking overview by status (pending, confirmed, completed), peak demand hours and top-booked instructors.",
     "stack-title": "Tech Stack",
     "quote": "\"An impeccable project that combines astute business vision with the effective development of a complete product.\"",
     "quote-author": "José Andrés Torres López",
