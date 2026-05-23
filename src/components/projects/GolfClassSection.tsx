@@ -42,9 +42,9 @@ function DeliveryRow({
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.7, ease: spring }}
-      className="relative w-full min-h-[260px]"
+      className="relative w-full h-full min-h-[260px] rounded-3xl overflow-hidden shadow-xl"
     >
-      <Image src={imageSrc} alt={title} fill className="object-contain" />
+      <Image src={imageSrc} alt={title} fill className="object-cover" />
     </motion.div>
   );
 
@@ -69,13 +69,13 @@ function DeliveryRow({
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-stretch">
       <div className="md:hidden">{imgEl}</div>
       <div className="md:hidden">{contentEl}</div>
       {imageLeft ? (
-        <><div className="hidden md:block">{imgEl}</div><div className="hidden md:block">{contentEl}</div></>
+        <><div className="hidden md:flex h-full">{imgEl}</div><div className="hidden md:flex h-full">{contentEl}</div></>
       ) : (
-        <><div className="hidden md:block">{contentEl}</div><div className="hidden md:block">{imgEl}</div></>
+        <><div className="hidden md:flex h-full">{contentEl}</div><div className="hidden md:flex h-full">{imgEl}</div></>
       )}
     </div>
   );
@@ -111,7 +111,7 @@ export default function GolfClassSection() {
           </div>
           <div className="flex flex-col gap-3">
             <a
-              href="https://golfclass.ct.ws/index.php"
+              href="https://golfclass.gt.tc/"
               target="_blank"
               rel="noopener noreferrer"
               className="block relative w-full aspect-[4/3] rounded-2xl overflow-hidden transition-transform duration-300 ease-out hover:scale-[1.04]"
@@ -124,7 +124,7 @@ export default function GolfClassSection() {
               />
             </a>
             <a
-              href="https://golfclass.ct.ws/index.php"
+              href="https://golfclass.gt.tc/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex self-center items-center gap-2 rounded-xl border border-white/20 text-white/80 text-sm py-2.5 px-4 hover:bg-white/10 transition-colors duration-200"
@@ -175,15 +175,15 @@ export default function GolfClassSection() {
           <div className="flex flex-col gap-16 md:gap-24">
             <DeliveryRow
               title={t('delivery-1-title')}
-              bullets={[t('delivery-1-b1'), t('delivery-1-b2'), t('delivery-1-b3'), t('delivery-1-b4')]}
+              bullets={[t('delivery-1-b1'), t('delivery-1-b2'), t('delivery-1-b3')]}
               imageLeft={true}
-              imageSrc="/img/global/gc_features.svg"
+              imageSrc="/img/global/gc_feat.webp"
             />
             <DeliveryRow
               title={t('delivery-2-title')}
               bullets={[t('delivery-2-b1'), t('delivery-2-b2'), t('delivery-2-b3')]}
               imageLeft={false}
-              imageSrc="/img/global/gc_crud.svg"
+              imageSrc="/img/global/gc_admin.webp"
             />
           </div>
         </div>
