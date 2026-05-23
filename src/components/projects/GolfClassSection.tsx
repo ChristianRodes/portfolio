@@ -42,7 +42,7 @@ function DeliveryRow({
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.7, ease: spring }}
-      className="relative w-full h-full min-h-[260px] rounded-3xl overflow-hidden shadow-xl"
+      className="relative w-full aspect-square rounded-3xl overflow-hidden shadow-xl"
     >
       <Image src={imageSrc} alt={title} fill className="object-cover" />
     </motion.div>
@@ -69,13 +69,13 @@ function DeliveryRow({
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-stretch">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
       <div className="md:hidden">{imgEl}</div>
       <div className="md:hidden">{contentEl}</div>
       {imageLeft ? (
-        <><div className="hidden md:flex h-full">{imgEl}</div><div className="hidden md:flex h-full">{contentEl}</div></>
+        <><div className="hidden md:block">{imgEl}</div><div className="hidden md:block">{contentEl}</div></>
       ) : (
-        <><div className="hidden md:flex h-full">{contentEl}</div><div className="hidden md:flex h-full">{imgEl}</div></>
+        <><div className="hidden md:block">{contentEl}</div><div className="hidden md:block">{imgEl}</div></>
       )}
     </div>
   );
