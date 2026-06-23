@@ -28,7 +28,7 @@ function CaseStudyCard({ title, description, image, cta, href, index, inView }: 
         transition={{ duration: 0.6, ease: spring, delay: index * 0.12 }}
         className="flex flex-col cursor-pointer group"
       >
-        <div className="relative w-full aspect-video bg-[#F0EDD8] rounded-2xl overflow-hidden">
+        <div className="relative w-1/2 md:w-full mx-auto aspect-video bg-[#F0EDD8] rounded-2xl overflow-hidden">
           <Image
             src={image}
             alt={title}
@@ -36,13 +36,13 @@ function CaseStudyCard({ title, description, image, cta, href, index, inView }: 
             className="object-contain transition-transform duration-500 ease-out group-hover:scale-[1.04] drop-shadow-sm"
           />
         </div>
-        <div className="pt-4 flex flex-col gap-2">
+        <div className="pt-2 md:pt-4 flex flex-col items-center gap-1 md:gap-2 text-center">
           <h3 className="font-bold text-[#1F4C34] text-base">
             {title.split('|')[0]}
             {title.includes('|') && <span className="font-normal">| {title.split('|')[1].trim()}</span>}
           </h3>
           <p className="text-sm text-[#1F4C34]/70 leading-relaxed">{description}</p>
-          <span className="inline-flex self-start items-center gap-2 text-sm text-[#1F4C34] border border-[#1F4C34]/30 px-3 py-1.5 rounded-xl mt-2 group-hover:bg-[#1F4C34]/5 transition-colors duration-200">
+          <span className="inline-flex items-center gap-2 text-sm text-[#1F4C34] border border-[#1F4C34]/30 px-3 py-1.5 rounded-xl mt-2 group-hover:bg-[#1F4C34]/5 transition-colors duration-200">
             {cta}
             <svg viewBox="0 0 16 16" fill="none" className="w-3.5 h-3.5" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -59,10 +59,10 @@ export default function ProjectsSection() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   return (
-    <section className="bg-[#F9F7EB] py-20 md:py-28 border-t border-[#E2DCC8]">
-      <div className="max-w-4xl mx-auto px-6 md:px-10 xl:px-0">
+    <section className="bg-[#F9F7EB] py-12 md:py-16 border-t border-[#E2DCC8]">
+      <div className="max-w-2xl mx-auto px-6 md:px-10 xl:px-0">
         <SectionLabel>{t('label')}</SectionLabel>
-        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           <CaseStudyCard
             title={t('featured.title')}
             description={t('featured.desc')}

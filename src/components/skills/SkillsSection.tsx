@@ -20,19 +20,19 @@ export default function SkillsSection() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   return (
-    <section className="bg-[#F9F7EB] py-20 md:py-28 border-t border-[#E2DCC8] pb-32">
-      <div className="max-w-5xl mx-auto px-6 md:px-10 xl:px-0">
+    <section className="bg-[#F9F7EB] py-12 md:py-16 border-t border-[#E2DCC8]">
+      <div className="max-w-2xl mx-auto px-6 md:px-10 xl:px-0">
         <SectionLabel>{t('label')}</SectionLabel>
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-8">
           {KEYS.map((key, index) => (
             <motion.div
               key={key}
               initial={{ opacity: 0, y: 12 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.45, ease: spring, delay: index * 0.07 }}
-              className="flex flex-col gap-4"
+              className="flex flex-col gap-2 md:gap-4"
             >
-              <div className="relative w-3/4 mx-auto aspect-square rounded-3xl overflow-hidden shadow-xl">
+              <div className="relative w-1/3 md:w-3/4 mx-auto aspect-square rounded-3xl overflow-hidden shadow-xl">
                 <Image src={IMAGES[key]} alt={t(`items.${key}.category` as any)} fill className="object-cover" />
               </div>
               <h3 className="font-bold text-[#1F4C34] text-base text-center">

@@ -17,7 +17,7 @@ export default function ExperienceSection() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   return (
-    <section className="bg-[#F9F7EB] py-20 md:py-28 border-t border-[#E2DCC8]">
+    <section className="bg-[#F9F7EB] py-12 md:py-16 border-t border-[#E2DCC8]">
       <div className="max-w-2xl mx-auto px-6 md:px-10 xl:px-0">
         <SectionLabel>{t('label')}</SectionLabel>
         <div ref={ref}>

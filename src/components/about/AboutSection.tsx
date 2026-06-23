@@ -16,7 +16,7 @@ export default function AboutSection() {
   );
 
   return (
-    <section className="bg-[#F9F7EB] py-20 md:py-28">
+    <section className="bg-[#F9F7EB] py-12 md:py-16">
       <div className="max-w-2xl mx-auto px-6 md:px-10 xl:px-0">
         <motion.div
           ref={ref}
