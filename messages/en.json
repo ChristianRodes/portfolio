@@ -85,7 +85,7 @@
 
   "CaseStudyPP": {
     "label": "Digital Product",
-    "title": "ProductPartner.io | Web Development Project",
+    "title": "ProductPartner.io",
     "desc": "Creative direction and development of the services and case studies sections for the site.",
     "tag1": "Creative Direction",
     "tag2": "Frontend Dev",
@@ -108,7 +108,7 @@
 
   "CaseStudyGC": {
     "label": "Digital Product",
-    "title": "GolfClass | Personal Project",
+    "title": "GolfClass",
     "desc": "Full-stack platform connecting golf teachers and students, built as a Final Degree Project.",
     "tag1": "Full-Stack Dev",
     "tag2": "UX/UI Design",
@@ -135,13 +135,13 @@
     "label": "Projects",
     "cta": "View more projects",
     "featured": {
-      "title": "ProductPartner.io | Web Development Project",
+      "title": "ProductPartner.io",
       "desc": "Creative direction and development of the services and case studies sections.",
       "metric": "Live Project",
       "cta": "See project"
     },
     "golfclass": {
-      "title": "GolfClass | Personal Project",
+      "title": "GolfClass",
       "desc": "Full-stack platform connecting golf teachers and students, built as a Final Degree Project.",
       "cta": "See project"
     },

@@ -28,7 +28,7 @@ function CaseStudyCard({ title, description, image, cta, href, index, inView }: 
         transition={{ duration: 0.6, ease: spring, delay: index * 0.12 }}
         className="flex flex-col cursor-pointer group"
       >
-        <div className="relative w-1/2 md:w-full mx-auto aspect-video bg-[#F0EDD8] rounded-2xl overflow-hidden">
+        <div className="relative w-full aspect-video bg-[#F0EDD8] rounded-2xl overflow-hidden">
           <Image
             src={image}
             alt={title}
