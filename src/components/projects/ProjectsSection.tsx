@@ -42,12 +42,6 @@ function CaseStudyCard({ title, description, image, cta, href, index, inView }: 
             {title.includes('|') && <span className="font-normal">| {title.split('|')[1].trim()}</span>}
           </h3>
           <p className="text-sm text-[#1F4C34]/70 leading-relaxed">{description}</p>
-          <span className="inline-flex items-center gap-2 text-sm text-[#1F4C34] border border-[#1F4C34]/30 px-3 py-1.5 rounded-xl mt-2 group-hover:bg-[#1F4C34]/5 transition-colors duration-200">
-            {cta}
-            <svg viewBox="0 0 16 16" fill="none" className="w-3.5 h-3.5" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </span>
         </div>
       </motion.div>
     </Link>
