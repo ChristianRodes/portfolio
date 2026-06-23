@@ -14,21 +14,21 @@ const inter = Inter({
 
 export const metadata = {
 	title: "Christian Rodes — Digital Builder",
-	description: "Junior Product Manager & Digital Builder. I analyse data, build products and optimise processes.",
+	description: "Project Manager and Data Specialist. I dig deep into problems, optimise processes and build exceptional digital products.",
 	icons: {
 		icon: "/img/global/logo 1.webp",
 		apple: "/img/global/logo 1.webp",
 	},
 	openGraph: {
 		title: "Christian Rodes — Digital Builder",
-		description: "Junior Product Manager & Digital Builder. I analyse data, build products and optimise processes.",
+		description: "Project Manager and Data Specialist. I dig deep into problems, optimise processes and build exceptional digital products.",
 		images: [{ url: "/og.png", width: 1200, height: 630 }],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: "Christian Rodes — Digital Builder",
-		description: "Junior Product Manager & Digital Builder. I analyse data, build products and optimise processes.",
+		description: "Project Manager and Data Specialist. I dig deep into problems, optimise processes and build exceptional digital products.",
 		images: ["/og.png"],
 	},
 };
