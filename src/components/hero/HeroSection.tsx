@@ -1,13 +1,22 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const spring = [0.22, 1, 0.36, 1] as const;
+const ROLE_COUNT = 3;
+const INTERVAL_MS = 3000;
 
 export default function HeroSection() {
 	const t = useTranslations('Hero');
+	const [roleIndex, setRoleIndex] = useState(0);
+
+	useEffect(() => {
+		const id = setInterval(() => setRoleIndex((i) => (i + 1) % ROLE_COUNT), INTERVAL_MS);
+		return () => clearInterval(id);
+	}, []);
 
 	return (
 		<section className="sticky top-0 z-0 min-h-[100svh] bg-[#1F4C34] flex items-center">
@@ -62,8 +71,30 @@ export default function HeroSection() {
 							transition={{ duration: 0.85, ease: spring, delay: 0.18 }}
 							className="font-bold tracking-tighter leading-[0.88] text-[clamp(3rem,10vw,6.5rem)]"
 						>
-							<span className="block text-white mb-4 font-bold">{t('headline-1')}</span>
-							<span className="block text-white italic font-normal">{t('headline-2')}</span>
+							<AnimatePresence mode="wait">
+								<motion.span
+									key={roleIndex}
+									initial={{ opacity: 0, y: 20 }}
+									animate={{ opacity: 1, y: 0 }}
+									exit={{ opacity: 0, y: -20 }}
+									transition={{ duration: 0.4, ease: spring }}
+									className="block text-white mb-4 font-bold"
+								>
+									{t(`role-${roleIndex}` as any)}
+								</motion.span>
+							</AnimatePresence>
+							<AnimatePresence mode="wait">
+								<motion.span
+									key={roleIndex}
+									initial={{ opacity: 0, y: 20 }}
+									animate={{ opacity: 1, y: 0 }}
+									exit={{ opacity: 0, y: -20 }}
+									transition={{ duration: 0.4, ease: spring, delay: 0.08 }}
+									className="block text-white italic font-normal"
+								>
+									{t(`suffix-${roleIndex}` as any)}
+								</motion.span>
+							</AnimatePresence>
 						</motion.h1>
 
 						{/* Description */}

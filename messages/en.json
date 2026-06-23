@@ -4,7 +4,13 @@
     "name-short": "I'm Chris",
     "headline-1": "Product",
     "headline-2": "Builder",
-    "description": "I transform ideas into digital products that solve real world problems.",
+    "role-0": "Product",
+    "role-1": "Data",
+    "role-2": "Project",
+    "suffix-0": "Builder",
+    "suffix-1": "Analyst",
+    "suffix-2": "Manager",
+    "description": "I dig deep into challenges and craft creative solutions with cutting-edge technology.",
     "cta": "Get in touch",
     "badge": "Available · 2025",
     "photo-alt": "Christian Rodes"
@@ -32,7 +38,7 @@
 
   "About": {
     "label": "About Me",
-    "p1": "I focus on solving real-world business challenges at the intersection of product management, data, and code. My goal isn't just to build software, but to create solutions that eliminate friction and drive measurable growth.",
+    "p1": "I focus on solving real-world business challenges at the intersection of technology, data, and operations. My goal isn't just to build software, but to create solutions that eliminate friction and drive measurable growth.",
     "p2": "",
     "p3": ""
   },
@@ -79,7 +85,7 @@
 
   "CaseStudyPP": {
     "label": "Digital Product",
-    "title": "ProductPartner.io",
+    "title": "ProductPartner.io | Web Development Project",
     "desc": "Creative direction and development of the services and case studies sections for the site.",
     "tag1": "Creative Direction",
     "tag2": "Frontend Dev",
@@ -102,7 +108,7 @@
 
   "CaseStudyGC": {
     "label": "Digital Product",
-    "title": "GolfClass",
+    "title": "GolfClass | Personal Project",
     "desc": "Full-stack platform connecting golf teachers and students, built as a Final Degree Project.",
     "tag1": "Full-Stack Dev",
     "tag2": "UX/UI Design",
@@ -126,16 +132,16 @@
   },
 
   "Projects": {
-    "label": "Digital Products",
+    "label": "Projects",
     "cta": "View more projects",
     "featured": {
-      "title": "ProductPartner.io",
+      "title": "ProductPartner.io | Web Development Project",
       "desc": "Creative direction and development of the services and case studies sections.",
       "metric": "Live Project",
       "cta": "See project"
     },
     "golfclass": {
-      "title": "GolfClass",
+      "title": "GolfClass | Personal Project",
       "desc": "Full-stack platform connecting golf teachers and students, built as a Final Degree Project.",
       "cta": "See project"
     },

@@ -102,7 +102,8 @@ export default function FeaturedProjectSection() {
               {t('label')}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight mb-4">
-              {t('title')}
+              {t('title').split('|')[0]}
+              {t('title').includes('|') && <span className="font-normal">| {t('title').split('|')[1].trim()}</span>}
             </h1>
             <p className="text-white/60 text-base leading-relaxed mb-6">
               {t('desc')}

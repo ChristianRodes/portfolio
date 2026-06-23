@@ -4,7 +4,13 @@
     "name-short": "Soy Chris",
     "headline-1": "Product",
     "headline-2": "Builder",
-    "description": "Transformo ideas en productos digitales que resuelven problemas del mundo real.",
+    "role-0": "Product",
+    "role-1": "Data",
+    "role-2": "Project",
+    "suffix-0": "Builder",
+    "suffix-1": "Analyst",
+    "suffix-2": "Manager",
+    "description": "Profundizo en cada reto y encuentro soluciones creativas con tecnología de vanguardia.",
     "cta": "Contactar",
     "badge": "Disponible · 2025",
     "photo-alt": "Christian Rodes"
@@ -32,7 +38,7 @@
 
   "About": {
     "label": "Sobre Mí",
-    "p1": "Me enfoco en resolver retos de negocio reales en la intersección entre la gestión de producto, los datos y el código. Mi objetivo no es solo construir software, sino crear soluciones que eliminen fricciones e impulsen un crecimiento medible.",
+    "p1": "Me enfoco en resolver retos de negocio reales en la intersección entre la tecnología, los datos y las operaciones. Mi objetivo no es solo construir software, sino crear soluciones que eliminen fricciones e impulsen un crecimiento medible.",
     "p2": "",
     "p3": ""
   },
@@ -79,7 +85,7 @@
 
   "CaseStudyPP": {
     "label": "Producto Digital",
-    "title": "ProductPartner.io",
+    "title": "ProductPartner.io | Trabajo de Desarrollo Web",
     "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito para el sitio.",
     "tag1": "Dirección Creativa",
     "tag2": "Desarrollo Web",
@@ -102,7 +108,7 @@
 
   "CaseStudyGC": {
     "label": "Producto Digital",
-    "title": "GolfClass",
+    "title": "GolfClass | Proyecto Personal",
     "desc": "Plataforma full-stack que conecta profesores de golf con alumnos, desarrollada como Trabajo Final de Grado.",
     "tag1": "Desarrollo Full-Stack",
     "tag2": "Diseño UX/UI",
@@ -126,16 +132,16 @@
   },
 
   "Projects": {
-    "label": "Productos Digitales",
+    "label": "Proyectos",
     "cta": "Ver más proyectos",
     "featured": {
-      "title": "ProductPartner.io",
+      "title": "ProductPartner.io | Trabajo de Desarrollo Web",
       "desc": "Dirección creativa y desarrollo de las secciones de servicios y casos de éxito.",
       "metric": "Proyecto Live",
       "cta": "Ver proyecto"
     },
     "golfclass": {
-      "title": "GolfClass",
+      "title": "GolfClass | Proyecto Personal",
       "desc": "Plataforma full-stack que conecta profesores de golf con alumnos, desarrollada como Trabajo Final de Grado.",
       "cta": "Ver proyecto"
     },

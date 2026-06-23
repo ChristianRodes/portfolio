@@ -37,7 +37,10 @@ function CaseStudyCard({ title, description, image, cta, href, index, inView }: 
           />
         </div>
         <div className="pt-4 flex flex-col gap-2">
-          <h3 className="font-bold text-[#1F4C34] text-base">{title}</h3>
+          <h3 className="font-bold text-[#1F4C34] text-base">
+            {title.split('|')[0]}
+            {title.includes('|') && <span className="font-normal">| {title.split('|')[1].trim()}</span>}
+          </h3>
           <p className="text-sm text-[#1F4C34]/70 leading-relaxed">{description}</p>
           <span className="inline-flex self-start items-center gap-2 text-sm text-[#1F4C34] border border-[#1F4C34]/30 px-3 py-1.5 rounded-xl mt-2 group-hover:bg-[#1F4C34]/5 transition-colors duration-200">
             {cta}
