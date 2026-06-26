@@ -1,20 +1,26 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const spring = [0.22, 1, 0.36, 1] as const;
 const ROLE_COUNT = 3;
-const INTERVAL_MS = 3000;
+const INTERVAL_MS = 2000;
+
+const CAROUSEL_SLOTS = [
+	{ x: 0, y: 0, scale: 1, opacity: 1, zIndex: 10 },
+	{ x: 0, y: 80, scale: 0.30, opacity: 0, zIndex: 0 },
+	{ x: 0, y: -120, scale: 0.30, opacity: 0.05, zIndex: 0 },
+];
 
 export default function HeroSection() {
 	const t = useTranslations('Hero');
-	const [roleIndex, setRoleIndex] = useState(0);
+	const [step, setStep] = useState(0);
 
 	useEffect(() => {
-		const id = setInterval(() => setRoleIndex((i) => (i + 1) % ROLE_COUNT), INTERVAL_MS);
+		const id = setInterval(() => setStep((s) => s + 1), INTERVAL_MS);
 		return () => clearInterval(id);
 	}, []);
 
@@ -64,38 +70,38 @@ export default function HeroSection() {
 					{/* ── RIGHT: Headline + description ── */}
 					<div className="flex flex-col lg:flex-1 lg:pl-16 gap-6 lg:gap-8 text-center">
 
-						{/* Main headline */}
-						<motion.h1
+						{/* Main headline — circular carousel */}
+						<motion.div
 							initial={{ opacity: 0, x: 28 }}
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.85, ease: spring, delay: 0.18 }}
-							className="font-bold tracking-tighter leading-[0.88] text-[clamp(3rem,10vw,6.5rem)]"
+							className="relative h-[7rem] md:h-[10rem]"
 						>
-							<AnimatePresence mode="wait">
-								<motion.span
-									key={roleIndex}
-									initial={{ opacity: 0, y: 20 }}
-									animate={{ opacity: 1, y: 0 }}
-									exit={{ opacity: 0, y: -20 }}
-									transition={{ duration: 0.4, ease: spring }}
-									className="block text-white mb-4 font-bold"
-								>
-									{t(`role-${roleIndex}` as any)}
-								</motion.span>
-							</AnimatePresence>
-							<AnimatePresence mode="wait">
-								<motion.span
-									key={roleIndex}
-									initial={{ opacity: 0, y: 20 }}
-									animate={{ opacity: 1, y: 0 }}
-									exit={{ opacity: 0, y: -20 }}
-									transition={{ duration: 0.4, ease: spring, delay: 0.08 }}
-									className="block text-white italic font-normal"
-								>
-									{t(`suffix-${roleIndex}` as any)}
-								</motion.span>
-							</AnimatePresence>
-						</motion.h1>
+							{Array.from({ length: ROLE_COUNT }).map((_, i) => {
+								const slot = CAROUSEL_SLOTS[(i + step % ROLE_COUNT) % ROLE_COUNT];
+								return (
+									<motion.h1
+										key={i}
+										animate={{
+											x: slot.x,
+											y: slot.y,
+											scale: slot.scale,
+											opacity: slot.opacity,
+											zIndex: slot.zIndex,
+										}}
+										transition={{ duration: 0.7, ease: spring }}
+										className="absolute inset-0 flex flex-col items-center justify-center font-bold tracking-tighter leading-[0.88] text-[clamp(2.5rem,8vw,6.5rem)]"
+									>
+										<span className="block text-white font-bold">
+											{t(`role-${i}` as any)}
+										</span>
+										<span className="block text-white italic font-normal mt-2">
+											{t(`suffix-${i}` as any)}
+										</span>
+									</motion.h1>
+								);
+							})}
+						</motion.div>
 
 						{/* Description */}
 						<motion.p
