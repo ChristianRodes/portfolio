@@ -9,20 +9,37 @@ const spring = [0.22, 1, 0.36, 1] as const;
 const ROLE_COUNT = 3;
 const INTERVAL_MS = 2000;
 
-const CAROUSEL_SLOTS = [
+const SLOTS_DESKTOP = [
 	{ x: 0, y: 0, scale: 1, opacity: 1, zIndex: 10 },
 	{ x: 0, y: 80, scale: 0.30, opacity: 0, zIndex: 0 },
 	{ x: 0, y: -120, scale: 0.30, opacity: 0.05, zIndex: 0 },
 ];
 
+const SLOTS_MOBILE = [
+	{ x: 0, y: 0, scale: 1, opacity: 1, zIndex: 10 },
+	{ x: 0, y: 100, scale: 0.25, opacity: 0, zIndex: 0 },
+	{ x: 0, y: -65, scale: 0.25, opacity: 0.05, zIndex: 0 },
+];
+
 export default function HeroSection() {
 	const t = useTranslations('Hero');
 	const [step, setStep] = useState(0);
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const mq = window.matchMedia('(max-width: 1023px)');
+		setIsMobile(mq.matches);
+		const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+		mq.addEventListener('change', handler);
+		return () => mq.removeEventListener('change', handler);
+	}, []);
 
 	useEffect(() => {
 		const id = setInterval(() => setStep((s) => s + 1), INTERVAL_MS);
 		return () => clearInterval(id);
 	}, []);
+
+	const slots = isMobile ? SLOTS_MOBILE : SLOTS_DESKTOP;
 
 	return (
 		<section className="sticky top-0 z-0 min-h-[100svh] bg-[#1F4C34] flex items-center">
@@ -78,7 +95,7 @@ export default function HeroSection() {
 							className="relative h-[7rem] md:h-[10rem]"
 						>
 							{Array.from({ length: ROLE_COUNT }).map((_, i) => {
-								const slot = CAROUSEL_SLOTS[(i + step % ROLE_COUNT) % ROLE_COUNT];
+								const slot = slots[(i + step % ROLE_COUNT) % ROLE_COUNT];
 								return (
 									<motion.h1
 										key={i}
